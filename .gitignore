@@ -52,3 +52,11 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# emacs
+*~
+
+# hyde
+_build
+deploy
+deploy_production

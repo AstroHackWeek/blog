@@ -1,0 +1,56 @@
+{% macro render_nav(menu, cls=None) -%}
+{% if menu -%}
+<nav {{'class='~cls if cls }}>
+    <ul>
+        {% for item in menu -%}
+        {% set active = False -%}
+        {% if item.type == 'page' -%}
+            {% set active = (resource.url ==
+                site.content.resource_from_relative_path(item.url).url) -%}
+        {% elif item.type == 'node' -%}
+            {% set active = (node ==
+                site.content.node_from_relative_path(item.url)) -%}
+        {%- endif %}
+        {% set classes = ['button'] -%}
+        {% do classes.append('active') if active -%}
+        {% do classes.append(item.css_class) if item.css_class -%}
+        <li>
+            <a title="{{ item.description }}"
+                class="{{ classes|join(' ') }}"
+                href="{{ "#" + item.url if item.type=="onpage" else content_url(item.url) if item.type=="page" else item.url }}">
+                {{ item.name }}
+            </a>
+        </li>
+        {%- endfor %}
+    </ul>
+</nav>
+{%- endif %}
+{%- endmacro %}
+
+{% macro gen_bio(img, name, twitter, github, website, bio) -%}
+   {% set bioid = name|replace(' ','')|replace('.','') -%}
+   <div class="bio" id="{{ bioid }}" style="float:left"
+     onclick="displayBio('{{ bioid }}', 'fullbio');">
+     <img src="{{ media_url(img) }}" class="bioPic" align="left">
+     <p class="bioName"><b>{{ name }}</b></p>
+     <div class="fullBio" style="display: none;">
+       <p><b>{{ name }}</b>
+       {% if twitter -%}
+       <a href="http://twitter.com/{{ twitter }}">
+         <img src="{{ media_url("images/twitter-black.png") }}" class="icon" alt="twitter" title="twitter">
+       </a>
+       {%- endif %}
+       {% if github -%}
+       <a href="http://github.com/{{ github }}">
+         <img src="{{ media_url("images/github-black.png") }}" class="icon" alt="github" title="github">
+       </a>
+       {%- endif %}
+       {% if website -%}
+       <a href="{{ website }}">
+         <img src="{{ media_url("images/www-black.png") }}" class="icon" alt="website" title="website">
+       {%- endif %}
+       </a></p>
+       <p>{{ bio }}</p>
+     </div>
+   </div>
+{%- endmacro %}
