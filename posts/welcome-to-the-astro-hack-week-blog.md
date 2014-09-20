@@ -12,7 +12,7 @@
 <div style="float:left">
 <img src="/images/HackWeek.jpg" width="300px">
 <br>
-<small>Photo by <a href="http://instagram.com/p/s_kq-OKS_p/">Adrian Price-Wheelan</a></small>
+<small>Photo by <a href="http://instagram.com/p/s_kq-OKS_p/">Adrian Price-Whelan</a></small>
 </div>
 
 The first [Astro Hack Week](http://astrohackweek.github.io) took place from September 15-19, 2014 at University of Washington. We had about 45 attendees through the week.  We spent the morning learning new coding, statistics, and data analysis skills, and spent the afternoons working together on a wide variety of projects. The projects spanned an extremely wide range of topics, and comprised everything from short exercises to development of teaching materials to full-blown research projects which will likely lead to publications!
