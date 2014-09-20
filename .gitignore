@@ -58,3 +58,5 @@ target/
 
 # nikola
 output
+.doit.db.db
+cache
