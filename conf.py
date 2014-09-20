@@ -294,30 +294,40 @@ RSS_PATH = "blog"
 # If you don't need any of these, just set to []
 REDIRECTIONS = []
 
-# Commands to execute to deploy. Can be anything, for example,
-# you may use rsync:
-# "rsync -rav --delete output/ joe@my.site:/srv/www/site"
-# And then do a backup, or run `nikola ping` from the `ping`
-# plugin (`nikola install_plugin ping`).
-# To do manual deployment, set it to []
-# DEPLOY_COMMANDS = []
+# Where the output site should be located
+# If you don't use an absolute path, it will be considered as relative
+# to the location of conf.py
+OUTPUT_FOLDER = 'output'
+
+# where the "cache" of partial generated content should be located
+# default: 'cache'
+CACHE_FOLDER = 'cache'
+
+# Commands to execute to deploy
+GITUSER = "astrohackweek"
+REPONAME = "astrohackweek.github.io"
+
+DEPLOY_COMMANDS = ['mkdir -p {CACHE_FOLDER}',
+                   ('if test -d {CACHE_FOLDER}/{REPONAME}; '
+                    'then echo " (repository exists)"; '
+                    'else echo " (cloning repository)" && cd {CACHE_FOLDER} && '
+                    'git clone git@github.com:{GITUSER}/{REPONAME}.git; fi'),
+                   ('cd {CACHE_FOLDER}/{REPONAME} && git checkout master && '
+                    'git pull;'),
+                   'rsync -r {OUTPUT_FOLDER}/*  {CACHE_FOLDER}/{REPONAME}',
+                   ('cd {CACHE_FOLDER}/{REPONAME} && git add . && '
+                    'git commit -m "update site"'),
+                   'cd {CACHE_FOLDER}/{REPONAME} && git push origin master'
+               ]
+DEPLOY_COMMANDS = [command.format(**globals()) for command in DEPLOY_COMMANDS]
 
 # For user.github.io/organization.github.io pages, the DEPLOY branch
 # MUST be 'master', and 'gh-pages' for other repositories.
 # GITHUB_SOURCE_BRANCH = 'master'
-# GITHUB_DEPLOY_BRANCH = 'gh-pages'
+# GITHUB_DEPLOY_BRANCH = 'master'
 
 # The name of the remote where you wish to push to, using github_deploy.
 # GITHUB_REMOTE_NAME = 'origin'
-
-# Where the output site should be located
-# If you don't use an absolute path, it will be considered as relative
-# to the location of conf.py
-# OUTPUT_FOLDER = 'output'
-
-# where the "cache" of partial generated content should be located
-# default: 'cache'
-# CACHE_FOLDER = 'cache'
 
 # Filters to apply to the output.
 # A directory where the keys are either: a file extensions, or

@@ -10,3 +10,4 @@
 -->
 
 The first [Astro Hack Week](http://astrohackweek.github.io) took place from September 15-19, 2014 at University of Washington.
+This blog is a stub for participants reporting their hacks!
