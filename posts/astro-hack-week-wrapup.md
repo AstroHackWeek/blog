@@ -15,9 +15,7 @@
 <small>Photo by <a href="http://instagram.com/p/s_kq-OKS_p/">Adrian Price-Whelan</a></small>
 </div>
 
-The first [Astro Hack Week](http://astrohackweek.github.io) took place from September 15-19, 2014 at University of Washington. We had about 45 attendees through the week.  We spent the morning learning new coding, statistics, and data analysis skills, and spent the afternoons working together on a wide variety of projects. The projects spanned an extremely wide range of topics, and comprised everything from short exercises to development of teaching materials to full-blown research projects which will likely lead to publications!
-
-We spent the mornings together learning new coding, statistics, and data analysis skills, and spent the afternoons working in pairs and groups on a wide variety of projects. These projects spanned a range of topics, and comprised everything from short exercises to development of teaching materials to full-blown research projects which will likely lead to publications!
+The first [Astro Hack Week](http://astrohackweek.github.io) took place from September 15-19, 2014 at University of Washington. We had about 45 attendees through the week. We spent the mornings together learning new coding, statistics, and data analysis skills, and spent the afternoons working in pairs and groups on a wide variety of projects. These projects spanned a range of topics, and comprised everything from short exercises to development of teaching materials to full-blown research projects which will likely lead to publications!
 
 Along with these hacks, the afternoons were also punctuated by informal breakout sessions on everything from using Git to constructing Probabilistic Graphical Models. Thanks to all the participants who stepped up to lead these breakouts and share their expertise with others!
 
