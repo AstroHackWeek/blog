@@ -1,28 +1,15 @@
 AstroData Website
 =================
-This is built with [hyde](http://hyde.github.io).
+Website build with [Nikola](http://getnikola.com)
 
-All the template information is in the ``layout`` directory, while all the
-content specific to this site is in the ``content`` directory.
+Configuration file for the site is `conf.py`.
 
-I've set up the repo so as to have all relevant information in the
-``content/index.html`` file.
+To build the site::
 
-The following actions require hyde to be installed on your system:
+    nikola build
 
-- To make the site, type 
-  ```
-  [~]$ make gen
-  ```
-- To start up a local version of the website, type
-  ```
-  [~]$ make serve
-  ```
-  and then point your browser to http://localhost:8080
-- To build and deploy the website to github pages, type
-  ```
-  [~]$ make publish
-  ```
-  This will build the website in production mode, clone the gh-pages branch
-  of the AstroData repository, commit the changes to the repo, and push them
-  to the github server.
+To see it::
+
+    nikola serve
+
+And point your browser to http://localhost:8000

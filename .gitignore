@@ -56,7 +56,5 @@ target/
 # emacs
 *~
 
-# hyde
-_build
-deploy
-deploy_production
+# nikola
+output
