@@ -60,3 +60,6 @@ target/
 output
 .doit.db.db
 cache
+
+# ipython
+.ipynb_checkpoints
