@@ -2,14 +2,23 @@ AstroData Website
 =================
 Website build with [Nikola](http://getnikola.com)
 
-Configuration file for the site is `conf.py`.
+To build this site, first install the prerequisites:
 
-To build the site::
+```
+[~]$ conda install ipython-notebook markdown jinja2 pip
+[~]$ pip install nikola
+```
 
-    nikola build
+Then you can build the site using
 
-To see it::
+```
+[~]$ nikola build
+```
 
-    nikola serve
+and preview using
+
+```
+[~]$ nikola serve
+```
 
 And point your browser to http://localhost:8000
