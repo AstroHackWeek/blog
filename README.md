@@ -22,3 +22,12 @@ and preview using
 ```
 
 And point your browser to http://localhost:8000
+
+How to Contribute
+-----------------
+Hack Week Participants: you can contribute a post by writing what you'd like to say either in markdown, restructured text, plain text, or an IPython notebook.
+Check out the ``posts/`` subdirectory of this repository for some examples.
+Any images or figures you'd like to include (other than those embedded in IPython notebooks) can be put in the ``files/images/`` directory.
+If you have something you'd like to post, you can email it to Jake (or better, submit it via a pull request), and Jake will take care of adding it to the blog and pushing the content to the web.
+
+Feel free to open issues with any questions you have or any problems with the site. Thanks!
