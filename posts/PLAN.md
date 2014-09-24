@@ -5,13 +5,13 @@ Below is the list of all hacks that were worked on during Astro Hack Week 2014, 
 
 ## On Deck
 
-* Next Blogger, `date`: `title` (linked to hackpad)
-* Next Blogger, `date`: `title` (linked to hackpad)
-* Next Blogger, `date`: `title` (linked to hackpad)
+* Next Blogger, `date`: **title** (linked to hackpad etc)
+* Next Blogger, `date`: **title** (linked to hackpad etc)
+* Next Blogger, `date`: **title** (linked to hackpad etc)
 
 ## Home Runs
 
-* Jake Vanderplas, `date`: **[Multi-output Random Forests](http://astrohackweek.github.io/blog/multi-output-random-forests.html)**, source code (ipynb) [here](https://github.com/AstroHackWeek/website_source/blob/master/posts/multi-output-random-forests.ipynb)
+* Jake Vanderplas, `2014-09-20`: **[Multi-output Random Forests](http://astrohackweek.github.io/blog/multi-output-random-forests.html)**, source code (ipynb) [here](https://github.com/AstroHackWeek/website_source/blob/master/posts/multi-output-random-forests.ipynb)
 
 
 
