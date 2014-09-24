@@ -1,4 +1,0 @@
-!!python/unicode 'index.html': [macros.j2, base.j2]
-!!python/unicode 'media/css/site.css': []
-!!python/unicode 'media/js/jquery-1.11.0.min.js': []
-!!python/unicode 'media/js/main.js': []
