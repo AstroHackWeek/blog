@@ -1,9 +1,8 @@
-AstroData Website
-=================
+# AstroData Website
 
 This is the source of the website found at http://astrohackweek.github.io/
 
-# How to Contribute
+## How to Contribute
 
 Hack Week Participants: you can contribute a post by writing what you'd like to say either in markdown, restructured text, plain text, or an IPython notebook. If you're comfortable with github and the Pull Request system, that's the best way to do things. If not, then feel free to email your content to Jake, and he will post it for you!
 
@@ -11,13 +10,17 @@ Please feel free to email Jake or to file an Issue in this repository with any q
 
 For those contributing via github, here are some tips:
 
-## Contributing via markdown
+### Contributing via markdown
 
 For markdown, create a file in the ``posts/`` subdirectory. You can model your file off [``posts/astro-hack-week-wrapup.md``](https://raw.githubusercontent.com/AstroHackWeek/website_source/master/posts/astro-hack-week-wrapup.md). Note that the HTML at the top is optional: it just inserts the picture into the file. For a quick summary of using markdown, see [the Daring Fireball guide](http://daringfireball.net/projects/markdown/)
 
 At the top of each markdown file is some blog metadata. You can modify that by hand with your post's title, author, date, etc. After adding your post to the directory, submit it as a pull request, and Jake will push it to the website!
 
-## Contributing via Notebook
+### Images for posts
+
+If you have image files you'd like to include in your post, you can put them in the ``files/images`` subdirectory, and reference them using an HTML tag (e.g. ``<img src="/images/HackWeek.jpg" width="300px">``).
+
+### Contributing via Notebook
 
 This blog build system is set up to accept posts composed entirely in IPython notebook. All this requires is to put the notebook file in the ``posts/`` subdirectory, and to add a metadata file. For example, the post within [``posts/multi-output-random-forests.ipynb``](https://github.com/AstroHackWeek/website_source/blob/master/posts/multi-output-random-forests.ipynb) has metadata in [``posts/multi-output-random-forests.meta``](https://github.com/AstroHackWeek/website_source/blob/master/posts/multi-output-random-forests.meta). If you send a pull request containing your notebook plus an associated metadata file, Jake will be able to quickly publish your post to the web.
 
