@@ -1,6 +1,6 @@
 # Blog Plan
 
-Below is the list of all hacks that were worked on during Astro Hack Week 2014, exported from the hackpad. Each one will become a blog post, somehow. If your hack is missing, or the link to your hackpad is broken, please fix it! Preferred MO is fork this repo, check in the edit, submit a pull request. 
+Below is the list of all hacks that were worked on during Astro Hack Week 2014, exported from the hackpad. Each one will become a blog post, somehow. If your hack is missing, or the link to your hackpad is broken, please fix it! Preferred MO is fork this repo, check in the edit, submit a pull request. And check out the "Home Runs" section for the blog posts that we have already published!
 
 
 ## On Deck
