@@ -1,8 +1,27 @@
 AstroData Website
 =================
-Website build with [Nikola](http://getnikola.com)
 
-To build this site, first install the prerequisites:
+# How to Contribute
+
+Hack Week Participants: you can contribute a post by writing what you'd like to say either in markdown, restructured text, plain text, or an IPython notebook. If you're comfortable with github and the Pull Request system, that's the best way to do things. If not, then feel free to email your content to Jake, and he will post it for you!
+
+Please feel free to email Jake or to file an Issue in this repository with any questions you have.
+
+For those contributing via github, here are some tips:
+
+## Contributing via markdown
+
+For markdown, create a file in the ``posts/`` subdirectory. You can model your file off [``posts/astro-hack-week-wrapup.md``](https://raw.githubusercontent.com/AstroHackWeek/website_source/master/posts/astro-hack-week-wrapup.md). Note that the HTML at the top is optional: it just inserts the picture into the file. For a quick summary of using markdown, see [the Daring Fireball guide](http://daringfireball.net/projects/markdown/)
+
+At the top of each markdown file is some blog metadata. You can modify that by hand with your post's title, author, date, etc. After adding your post to the directory, submit it as a pull request, and Jake will push it to the website!
+
+## Contributing via Notebook
+
+This blog build system is set up to accept posts composed entirely in IPython notebook. All this requires is to put the notebook file in the ``posts/`` subdirectory, and to add a metadata file. For example, the post within [``posts/multi-output-random-forests.ipynb``](https://github.com/AstroHackWeek/website_source/blob/master/posts/multi-output-random-forests.ipynb) has metadata in [``posts/multi-output-random-forests.meta``](https://github.com/AstroHackWeek/website_source/blob/master/posts/multi-output-random-forests.meta). If you send a pull request containing your notebook plus an associated metadata file, Jake will be able to quickly publish your post to the web.
+
+# How to Build the Site
+
+If you wish to build a copy of the site locally and check how your post will be displayed once it is published, you will first need to install the [Nikola](http://getnikola.com) Python package and a few prerequisites. If you're using Anaconda for your Python setup, it can be done as follows:
 
 ```
 [~]$ conda install ipython-notebook markdown jinja2 pip
@@ -21,16 +40,6 @@ and preview using
 [~]$ nikola serve
 ```
 
-And point your browser to http://localhost:8000
+And point your browser to http://localhost:8000.
 
-How to Contribute
------------------
-Hack Week Participants: you can contribute a post by writing what you'd like to say either in markdown, restructured text, plain text, or an IPython notebook.
-Check out the ``posts/`` subdirectory of this repository for some examples.
-Any images or figures you'd like to include (other than those embedded in IPython notebooks) can be put in the ``files/images/`` directory.
-If you have something you'd like to post, you can email it to Jake (or better, submit it via a pull request), and Jake will take care of adding it to the blog and pushing the content to the web.
-
-For examples of posts in markdown and notebook format, see the [posts subdirectory](https://github.com/AstroHackWeek/website_source/tree/master/posts) of this repository. Note that markdown posts contain some metadata at the top of the file, while notebook posts have metadata in a separate file.
-
-
-Feel free to open issues with any questions you have or any problems with the site. Thanks!
+If you'd like to publish the site to http://astrohackweek.github.io, then use ``nikola deploy`` (Note: you need to be one of the site maintainers in order to do this).
