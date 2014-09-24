@@ -1,6 +1,8 @@
 AstroData Website
 =================
 
+This is the source of the website found at http://astrohackweek.github.io/
+
 # How to Contribute
 
 Hack Week Participants: you can contribute a post by writing what you'd like to say either in markdown, restructured text, plain text, or an IPython notebook. If you're comfortable with github and the Pull Request system, that's the best way to do things. If not, then feel free to email your content to Jake, and he will post it for you!
