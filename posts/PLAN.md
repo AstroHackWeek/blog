@@ -9,6 +9,12 @@ Below is the list of all hacks that were worked on during Astro Hack Week 2014, 
 * Next Blogger, `date`: `title` (linked to hackpad)
 * Next Blogger, `date`: `title` (linked to hackpad)
 
+## Home Runs
+
+* Jake Vanderplas, `date`: **[Multi-output Random Forests](http://astrohackweek.github.io/blog/multi-output-random-forests.html)**, source code (ipynb) [here](https://github.com/AstroHackWeek/website_source/blob/master/posts/multi-output-random-forests.ipynb)
+
+
+
 ## Hacks Still To Be Blogged
 
 *   An Astrophysicist's **Interactive Resume** (Caroline Sofiatti) - Create an interactive resume ([something like this](http://www.anniwang.com/)) that tells a kid-friendly, high-level story about my research and my lab by using images and data visualization. I think this is a good step towards getting kids, [and in particular girls](http://blogs.scientificamerican.com/budding-scientist/2013/04/16/to-attract-more-girls-to-stem-bring-storytelling-to-science/), more excited about science. 
@@ -49,9 +55,4 @@ Below is the list of all hacks that were worked on during Astro Hack Week 2014, 
     *   Third try over Aleppo using various KMeans attempts: [](http://nbviewer.ipython.org/gist/kapadia/76d43f29e745250c4571)http://nbviewer.ipython.org/gist/kapadia/76d43f29e745250c4571
 
 *   **K2 photometry** (Daniel Foreman-Mackey) - Doing PSF photometry for the second version of the Kepler satellite. Code: [](https://github.com/dfm/kpsf)https://github.com/dfm/kpsf, using the C++ optimization library [Ceres](http://ceres-solver.org/)
-
-
-## Hacks Already Blogged
-
-* Jake Vanderplas, `date`: **Multi-etc** - No hackpad found!
 
