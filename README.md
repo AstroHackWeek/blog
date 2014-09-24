@@ -1,10 +1,10 @@
-# AstroData Website
+# AstroData Hack Week Website
 
 This is the source of the website found at http://astrohackweek.github.io/
 
 ## How to Contribute
 
-Hack Week Participants: you can contribute a post by writing what you'd like to say either in markdown, restructured text, plain text, or an IPython notebook. If you're comfortable with github and the Pull Request system, that's the best way to do things. If not, then feel free to email your content to Jake, and he will post it for you!
+Hack Week 2014 Participants: you can contribute a post by writing what you'd like to say either in markdown, restructured text, plain text, or an IPython notebook. If you're comfortable with github and the Pull Request system, that's the best way to do things. If not, then feel free to email your content to Jake, and he will post it for you!
 
 Please feel free to email Jake or to file an Issue in this repository with any questions you have.
 
@@ -15,6 +15,10 @@ For those contributing via github, here are some tips:
 For markdown, create a file in the ``posts/`` subdirectory. You can model your file off [``posts/astro-hack-week-wrapup.md``](https://raw.githubusercontent.com/AstroHackWeek/website_source/master/posts/astro-hack-week-wrapup.md). Note that the HTML at the top is optional: it just inserts the picture into the file. For a quick summary of using markdown, see [the Daring Fireball guide](http://daringfireball.net/projects/markdown/)
 
 At the top of each markdown file is some blog metadata. You can modify that by hand with your post's title, author, date, etc. After adding your post to the directory, submit it as a pull request, and Jake will push it to the website!
+
+### Developing markdown on the Hackpad
+
+You can export your hackpad to markdown by clicking on your profile picture or name on teh righthand sidebar, and then selecting "download as markdown" or somesuch. This will export all of the hackpads that you own to a zip archive, which you can unpack and then check in. It's nice to leave your hackpad in good shape, so this approach has some value.
 
 ### Images for posts
 
