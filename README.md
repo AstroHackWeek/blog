@@ -6,6 +6,8 @@ This is the source of the website found at http://astrohackweek.github.io/
 
 Hack Week 2014 Participants: you can contribute a post by writing what you'd like to say either in markdown, restructured text, plain text, or an IPython notebook. If you're comfortable with github and the Pull Request system, that's the best way to do things. If not, then feel free to email your content to Jake, and he will post it for you!
 
+We're hoping to get everyone written up on the blog at some point. See the [PLAN](PLAN.md), for the list of all bloggable hacks, in order of who's blogging next. Feel free to add yours if you don't see it!
+
 Please feel free to email Jake or to file an Issue in this repository with any questions you have.
 
 For those contributing via github, here are some tips:
