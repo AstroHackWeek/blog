@@ -1,8 +1,8 @@
 <!--
 .. title: K2 Photometry
 .. slug: k2-photometry
-.. date: 2014-09-24 09:00:00 UTC-07:00
-.. tags: hacking
+.. date: 2014-09-25 11:00:00 UTC-07:00
+.. tags: hacking, kepler, probabilistic models
 .. author: Dan Foreman-Mackey
 .. link:
 .. description: Hacking on getting precise photometry from K2
@@ -40,6 +40,8 @@ The code lives (and is being actively developed) on GitHub
 [dfm/kpsf](https://github.com/dfm/kpsf) and the K2 data can be downloaded from
 [MAST](http://archive.stsci.edu/search_fields.php?mission=k2) using Python and
 the git version of [kplr](https://github.com/dfm/kplr).
+
+<!-- TEASER_END -->
 
 **The Model** —
 The model that I implemented at the hack week has the following parameters:
