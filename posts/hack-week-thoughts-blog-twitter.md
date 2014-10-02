@@ -9,11 +9,7 @@
 .. type: text
 -->
 
-<div style="float:left">
-<img src="/images/DanFMBreakout.jpg" width="300px">
-<br>
-<small>Dan FM teaches a breakout!</small>
-</div>
+<img src="/galleries/hackweek/hackweek_panorama.jpg" width="100%">
 
 We're still working on getting some hack summaries here on the website. In the mean-time, some of the hack week participants have been blogging and writing about their own thoughts from the week! I wanted to compile a few of these responses here:
 
