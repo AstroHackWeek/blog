@@ -36,7 +36,7 @@ I only spent 5 days among the community of astro hackers, but in the spirit of h
 ### Themes
 
 <div style="float:right">
-<img src="/images/bloom-teaching.jpg" width="300px">
+<img src="/galleries/hackweek/P9184410.jpg" width="300px">
 <br>
 <small>Josh Bloom teaches Machine Learning</small>
 </div>
@@ -48,9 +48,7 @@ Josh Bloom's lecture on machine learning explained the popular idea of "Pi-shape
 **Categorizing hacking interactions** I categorized the different kinds of hacking interactions I observed over the course of the week. This list is not meant to be exhaustive, but it might be helpful in understanding the diversity of interactions and how to facilitate the types of hacking interactions desired.
 
 <div style="float:left">
-<img src="/images/foreman-mackey-breakout.jpg" width="300px">
-<br>
-<small>Dan Foreman-Mackey teaches a breakout session</small>
+<img src="/galleries/hackweek/P9194506.jpg" width="300px">
 </div>
 
 - *Resource Seeking:* An individual works on their hack idea and uses other people as sources of expertise when they need help
@@ -62,13 +60,15 @@ Asymmetical Synergy: A pair or small group joins together to work on a hack idea
 ### The Importance of "Connective Tissue"
 
 <div style="float:right">
-<img src="/images/HackWeek.jpg" width="300px">
-<br>
-<small>Photo by <a href="http://instagram.com/p/s_kq-OKS_p/">Adrian Price-Whelan</a></small>
+<img src="/galleries/hackweek/P9194457.jpg" width="300px">
 </div>
 
 Across this community there is great diversity across institution, dataset, data source, methodology, computing tools and packages, statistical approach, status within academia, and level of knowledge in different arenas. This creates many opportunities for discovering connections, for sharing, and working together. Yet this also presents challenges for forging these connections especially within the broader academic environment which in many ways doesn't incentivize collaboration and "failing fast". Failing fast refers to the capacity to be highly experimental, to take risks, and invest a little bit often, such that when things don't work, it is framed much more as part of the iterative process rather than as a significant loss. In a culture where people are failing fast, people are more likely to take risks and learning can happen more rapidly.
 
 A key and essential role that emerged this week was the set of capacities for facilitating connection across people and ideas, what Fernando Perez has called the "connective tissue". There is a need both the people and the organizational structure that supports social and technical resonances across a wide range of people and can facilitate connections among them. These people can play a role of translation across ideas that might appear otherwise unrelated. They also provide coaching (as opposed to teaching) to help both identify and achieve their goals. We should all be learning from these people so that we can all contribute to the connective tissue. This connective tissue developed further throughout the week. Specifically, the more semi-structured collective learning activities and the emphasis on working in pairs greatly increased the productivity across the group (there was more to show at the end of the day) and the interaction (fewer people with earphones in and more talking). I also observed many more small and big shared victories. I hadn't yet seen a high five and I saw two instances on Thursday, which reflected the overall sense that the victory was about more than an individual completing the hack, rather it was shared and celebrated together.
+
+<div style="float:left">
+<img src="/galleries/hackweek/P9164368.jpg" width="300px">
+</div>
 
 This hack week performs as a kind of lab space where people can take risks and work together in new ways that they might not be incentivized to do otherwise. It is an opportunity to change the incentives for a short period of time. In fact, the frictions that we see emerge in this hack week (i.e. people needing to work towards publications) reflect some of the default incentives clashing with hack week incentives. For future hack weeks it might be important to advocate failing fast through normalizing it and facilitating a supportive environment for risk taking. In addition, part of the goal of a future hack week might be more explicitly to learn about how to work together and what it takes to develop connective tissue through incentivizing a range of different hacking interactions.
