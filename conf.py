@@ -111,6 +111,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/blog/index.html', 'Blog'),
+        ("/galleries/AstroHackWeek2014", "Photos"),
         ("/blog/archive.html", "Archive"),
         ("/blog/categories/index.html", "Tags"),
         ("/blog/rss.xml", "RSS feed"),
