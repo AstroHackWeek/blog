@@ -1,7 +1,7 @@
 <!--
 .. title: Bayesian Evidence Calculation
 .. slug: bayesian-evidence
-.. date: 2014-09-30 9:00:00 UTC-07:00
+.. date: 2014-10-03 08:00:00 UTC-07:00
 .. tags: hacking, bayesian evidence
 .. author: Kyle Barbary
 .. link:
