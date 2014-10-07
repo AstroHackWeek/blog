@@ -1,7 +1,7 @@
 <!--
 .. title: Hack the textbook figures
 .. slug: Hack-the-textbook-figures
-.. date: 2014-10-05 11:00:00 UTC-07:00
+.. date: 2014-10-07 08:30:00 UTC-07:00
 .. tags: hacking, visualization, statistics, machine learning, IPython Notebook
 .. author: Michael Gully-Santiago
 .. link:
