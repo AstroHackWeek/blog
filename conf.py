@@ -21,7 +21,7 @@ BLOG_AUTHOR = "Jake VanderPlas"  # (translatable)
 BLOG_TITLE = "Astro Hack Week"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://astrohackweek.github.io/"
+SITE_URL = "http://astrohackweek.github.io/2014/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://astrohackweek.github.io/"
@@ -123,6 +123,8 @@ THEME = "astrohackweek"
 
 # Below this point, everything is optional
 
+WRITE_TAG_CLOUD = True
+
 # Post's dates are considered in UTC by default, if you want to use
 # another time zone, please set TIMEZONE to match. Check the available
 # list from Wikipedia:
@@ -131,6 +133,9 @@ THEME = "astrohackweek"
 # Also, if you want to use a different time zone in some of your posts,
 # you can use the ISO 8601/RFC 3339 format (ex. 2012-03-30T23:00:00+02:00)
 TIMEZONE = "America/Los_Angeles"
+
+# If webassets is installed, bundle JS and CSS to make site loading faster
+USE_BUNDLES = False
 
 # If you want to use ISO 8601 (also valid RFC 3339) throughout Nikola
 # (especially in new_post), set this to True.
@@ -304,23 +309,28 @@ OUTPUT_FOLDER = 'output'
 # default: 'cache'
 CACHE_FOLDER = 'cache'
 
-# Commands to execute to deploy
-GITUSER = "astrohackweek"
-REPONAME = "astrohackweek.github.io"
-
-DEPLOY_COMMANDS = ['mkdir -p {CACHE_FOLDER}',
-                   ('if test -d {CACHE_FOLDER}/{REPONAME}; '
-                    'then echo " (repository exists)"; '
-                    'else echo " (cloning repository)" && cd {CACHE_FOLDER} && '
-                    'git clone git@github.com:{GITUSER}/{REPONAME}.git; fi'),
-                   ('cd {CACHE_FOLDER}/{REPONAME} && git checkout master && '
-                    'git pull;'),
-                   'rsync -r {OUTPUT_FOLDER}/*  {CACHE_FOLDER}/{REPONAME}',
-                   ('cd {CACHE_FOLDER}/{REPONAME} && git add . && '
-                    'git commit -m "update site"'),
-                   'cd {CACHE_FOLDER}/{REPONAME} && git push origin master'
-               ]
-DEPLOY_COMMANDS = [command.format(**globals()) for command in DEPLOY_COMMANDS]
+# NOTE: The following block is the old command used to deploy the site when
+#       it was at astrohackweek.github.io rather than
+#       astrohackweek.github.io/2014. This is also based on an older version
+#       of Nikola where DEPLOY_COMMANDS was a list (now it's a dict).
+#       Now we just use `nikola github_deploy` but we're keeping these
+#       for posterity.
+#
+#GITUSER = "astrohackweek"
+#REPONAME = "astrohackweek.github.io"
+#DEPLOY_COMMANDS = ['mkdir -p {CACHE_FOLDER}',
+#                   ('if test -d {CACHE_FOLDER}/{REPONAME}; '
+#                    'then echo " (repository exists)"; '
+#                    'else echo " (cloning repository)" && cd {CACHE_FOLDER} && '
+#                    'git clone git@github.com:{GITUSER}/{REPONAME}.git; fi'),
+#                   ('cd {CACHE_FOLDER}/{REPONAME} && git checkout master && '
+#                    'git pull;'),
+#                   'rsync -r {OUTPUT_FOLDER}/*  {CACHE_FOLDER}/{REPONAME}',
+#                   ('cd {CACHE_FOLDER}/{REPONAME} && git add . && '
+#                    'git commit -m "update site"'),
+#                   'cd {CACHE_FOLDER}/{REPONAME} && git push origin master'
+#               ]
+#DEPLOY_COMMANDS = [command.format(**globals()) for command in DEPLOY_COMMANDS]
 
 # For user.github.io/organization.github.io pages, the DEPLOY branch
 # MUST be 'master', and 'gh-pages' for other repositories.

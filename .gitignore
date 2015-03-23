@@ -58,7 +58,7 @@ target/
 
 # nikola
 output
-.doit.db.db
+.doit.db
 cache
 
 # ipython
