@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Astro Hack Week (twitter)</title><link>http://astrohackweek.github.io/2014/</link><description></description><atom:link href="http://astrohackweek.github.io/2014/blog/categories/twitter.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 23 Mar 2015 12:12:24 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Hack Week Responses: Blogs and Twitter</title><link>http://astrohackweek.github.io/2014/blog/hack-week-thoughts-blog-twitter.html</link><dc:creator>Jake VanderPlas</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img src="http://astrohackweek.github.io/2014/galleries/AstroHackWeek2014/hackweek_panorama.jpg" width="100%"&gt;&lt;/p&gt;
+&lt;p&gt;We're still working on getting some hack summaries here on the website. In the mean-time, some of the hack week participants have been blogging and writing about their own thoughts from the week! I wanted to compile a few of these responses here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ruth Angus' post on &lt;a href="http://astrobites.org/2014/09/24/astro-data-hack-week/"&gt;AstroBites&lt;/a&gt;:&lt;/strong&gt; a great high-level summary of what went on through the week! Ruth does a great job capturing the spirit of the event, as well as some details on things she learned and took home.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;David Hogg's daily research posts:&lt;/strong&gt; If you've never come across &lt;a href="http://hoggresearch.blogspot.com/"&gt;Hogg's Research Blog&lt;/a&gt;, it's worth digging around in it for a while. Each day, Hogg writes a brief summary of what he worked on or thought about for the day, and the result is a nearly decade-long log of his scientific ideas and interactions. He did this through the hack week as well, and you can read his thoughts here: &lt;a href="http://hoggresearch.blogspot.com/2014/09/astrodata-hack-week-day-1.html"&gt;Day 1&lt;/a&gt;, &lt;a href="http://hoggresearch.blogspot.com/2014/09/astrodata-hack-week-day-2.html"&gt;Day 2&lt;/a&gt;, &lt;a href="http://hoggresearch.blogspot.com/2014/09/astrodata-hack-week-day-3.html"&gt;Day 3&lt;/a&gt;, &lt;a href="http://hoggresearch.blogspot.com/2014/09/astrodata-hack-week-day-4.html"&gt;Day 4&lt;/a&gt;, &lt;a href="http://hoggresearch.blogspot.com/2014/09/astrodata-hack-week-day-5.html"&gt;Day 5&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Adrian Price-Whelan's &lt;a href="http://apwhelan.blogspot.com/2014/09/cell-macros-in-ipython-notebook.html"&gt;IPython Cell Macros&lt;/a&gt; hack:&lt;/strong&gt; so often when starting up an IPython notebook, we find ourselves importing all the same tools in the first cell. Now there's a button which adds this cell automatically!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;UW eScience has a quick &lt;a href="http://escience.washington.edu/blog/astrodata-hack-week-2014"&gt;writeup&lt;/a&gt;:&lt;/strong&gt; drawn mostly from our earlier post here. Great to have recognition from one of our sponsoring organizations!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And of course, there's always Twitter. Many of the week's participants were tweeting with the &lt;a href="https://twitter.com/hashtag/astrohackweek"&gt;#AstroHackWeek&lt;/a&gt; tag. Below are a few randomly-chosen highlights.&lt;/p&gt;
+&lt;p&gt;I know that I, for one, am really hoping this happens again.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://astrohackweek.github.io/2014/blog/hack-week-thoughts-blog-twitter.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>blog roll</category><category>summary</category><category>twitter</category><guid>http://astrohackweek.github.io/2014/blog/hack-week-thoughts-blog-twitter.html</guid><pubDate>Wed, 24 Sep 2014 17:00:00 GMT</pubDate></item></channel></rss>

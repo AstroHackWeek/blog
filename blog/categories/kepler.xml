@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Astro Hack Week (kepler)</title><link>http://astrohackweek.github.io/2014/</link><description></description><atom:link href="http://astrohackweek.github.io/2014/blog/categories/kepler.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 23 Mar 2015 12:12:24 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>K2 Photometry</title><link>http://astrohackweek.github.io/2014/blog/k2-photometry.html</link><dc:creator>Dan Foreman-Mackey</dc:creator><description>&lt;div&gt;&lt;div style="float: left; padding-bottom: 6px;"&gt;
+    &lt;img src="http://astrohackweek.github.io/2014/images/dfm-adhw-img.png" width="500"&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For my AstroHackWeek project, I decided to hack on the new images coming from
+&lt;a href="http://keplerscience.arc.nasa.gov/K2/"&gt;NASA's K2 mission&lt;/a&gt;, the second
+generation of the &lt;em&gt;Kepler&lt;/em&gt; satellite.
+The original &lt;em&gt;Kepler&lt;/em&gt; mission obtained exquisite precision in the photometry
+because the satellite's pointing was stable to better than a hundredth of a
+pixel.
+For &lt;em&gt;K2&lt;/em&gt;, this is no longer the case.
+Therefore, we'll need to work a little harder to extract useful photometric
+measurements from these data.
+That being said, these pointing variations also break some of the degeneracies
+between the flat field of the detector and the PSF so we might be able to
+learn some things about &lt;em&gt;Kepler&lt;/em&gt; that we couldn't have with the previous data
+releases.&lt;/p&gt;
+&lt;p&gt;At the hack week, I got a proof-of-concept implemented but there's definitely
+a lot to do if we want to develop a general method.
+The basic idea is to build a flexible probabilistic model inspired by what we
+know about the physical properties of &lt;em&gt;Kepler&lt;/em&gt; and then optimize the
+parameters of this model to produce a light curve.&lt;/p&gt;
+&lt;p&gt;The figure at the top of this page shows a single frame observed in the
+engineering phase of K2 on the left and, on the right, the optimized model for
+the same frame.
+The code lives (and is being actively developed) on GitHub
+&lt;a href="https://github.com/dfm/kpsf"&gt;dfm/kpsf&lt;/a&gt; and the K2 data can be downloaded from
+&lt;a href="http://archive.stsci.edu/search_fields.php?mission=k2"&gt;MAST&lt;/a&gt; using Python and
+the git version of &lt;a href="https://github.com/dfm/kplr"&gt;kplr&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://astrohackweek.github.io/2014/blog/k2-photometry.html"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>hacking</category><category>kepler</category><category>probabilistic models</category><guid>http://astrohackweek.github.io/2014/blog/k2-photometry.html</guid><pubDate>Thu, 25 Sep 2014 18:00:00 GMT</pubDate></item></channel></rss>

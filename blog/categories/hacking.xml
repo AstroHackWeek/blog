@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Astro Hack Week (hacking)</title><link>http://astrohackweek.github.io/2014/</link><description></description><atom:link href="http://astrohackweek.github.io/2014/blog/categories/hacking.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 23 Mar 2015 12:12:24 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Hack the textbook figures</title><link>http://astrohackweek.github.io/2014/blog/Hack-the-textbook-figures.html</link><dc:creator>Michael Gully-Santiago</dc:creator><description>&lt;div&gt;&lt;p&gt;Every single figure in the &lt;a href="http://press.princeton.edu/titles/10159.html"&gt;text book&lt;/a&gt; &lt;em&gt;Statistics, Data Mining, and Machine Learning in Astronomy&lt;/em&gt; is &lt;a href="http://www.astroml.org/book_figures/"&gt;downloadable and fully reproducible online&lt;/a&gt;.  Jake VanderPlas accomplished this heroic feat as a graduate student at the University of Washington.  Jake recalled the origin story to some of us at the hack week.  He explained that he would usually have the figure done the same week it was conceived, and was really pretty happy with the whole experience of being a part of making the textbook and ultimately becoming a coauthor.  His figures are now indispensable. Because of Jake's investment, generations of astronomers to come can now benefit from reproducing the explanatory material in the Textbook.  The figures are complementary to the textbook prose.  The textbook prose explains the theoretical framework underlying the concepts.  Equations are derived.  But by digging into the textbook figure Python code, the reader can see how the method is &lt;em&gt;implemented&lt;/em&gt;, and try it out by tweaking the input.  "What happens if I double the noise? Or decimate the number of data points?  Or change this-or-that parameter?  How long does it take to run?"  &lt;/p&gt;
+&lt;p&gt;These and other questions motivated my hack idea, which was to dig into the source code of textbook figures and do some hacking.  &lt;/p&gt;
+&lt;div id="test_figure"&gt;&lt;/div&gt;
+
+&lt;script type="text/javascript" src="http://astrohackweek.github.io/2014/js/hack-book-figs.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  draw_figure("test_figure");
+&lt;/script&gt;
+
+&lt;p&gt;So on Wednesday of the Hack Week a table of about 8 of us all hacked the book figures.  The figure above is one of those figures, 
+&lt;/p&gt;&lt;p&gt;&lt;a href="http://astrohackweek.github.io/2014/blog/Hack-the-textbook-figures.html"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>IPython Notebook</category><category>hacking</category><category>machine learning</category><category>statistics</category><category>visualization</category><guid>http://astrohackweek.github.io/2014/blog/Hack-the-textbook-figures.html</guid><pubDate>Tue, 07 Oct 2014 15:30:00 GMT</pubDate></item><item><title>Bayesian Evidence Calculation</title><link>http://astrohackweek.github.io/2014/blog/bayesian-evidence.html</link><dc:creator>Kyle Barbary</dc:creator><description>&lt;div&gt;&lt;p&gt;In a Bayesian framework, object classification or model comparison can
+be done naturally by comparing the Bayesian &lt;em&gt;evidence&lt;/em&gt; between two or
+more models, given the data. The evidence is the integral of the
+likelihood of the data over the entire prior volume for all the model
+parameters, weighted by the prior. (The ratio of evidence for two
+different models is known as the &lt;a href="http://en.wikipedia.org/wiki/Bayes_factor"&gt;Bayes
+Factor&lt;/a&gt;.) This
+multi-dimensional integral gets increasingly computationally intensive
+as the number of parameters increases. As a result, several clever
+algorithms have been developed to efficiently approximate the answer.&lt;/p&gt;
+&lt;p&gt;In this hack, I looked at a couple specific implementations of such
+algorithms in Python.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://astrohackweek.github.io/2014/blog/bayesian-evidence.html"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>bayesian evidence</category><category>hacking</category><guid>http://astrohackweek.github.io/2014/blog/bayesian-evidence.html</guid><pubDate>Fri, 03 Oct 2014 15:00:00 GMT</pubDate></item><item><title>K2 Photometry</title><link>http://astrohackweek.github.io/2014/blog/k2-photometry.html</link><dc:creator>Dan Foreman-Mackey</dc:creator><description>&lt;div&gt;&lt;div style="float: left; padding-bottom: 6px;"&gt;
+    &lt;img src="http://astrohackweek.github.io/2014/images/dfm-adhw-img.png" width="500"&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For my AstroHackWeek project, I decided to hack on the new images coming from
+&lt;a href="http://keplerscience.arc.nasa.gov/K2/"&gt;NASA's K2 mission&lt;/a&gt;, the second
+generation of the &lt;em&gt;Kepler&lt;/em&gt; satellite.
+The original &lt;em&gt;Kepler&lt;/em&gt; mission obtained exquisite precision in the photometry
+because the satellite's pointing was stable to better than a hundredth of a
+pixel.
+For &lt;em&gt;K2&lt;/em&gt;, this is no longer the case.
+Therefore, we'll need to work a little harder to extract useful photometric
+measurements from these data.
+That being said, these pointing variations also break some of the degeneracies
+between the flat field of the detector and the PSF so we might be able to
+learn some things about &lt;em&gt;Kepler&lt;/em&gt; that we couldn't have with the previous data
+releases.&lt;/p&gt;
+&lt;p&gt;At the hack week, I got a proof-of-concept implemented but there's definitely
+a lot to do if we want to develop a general method.
+The basic idea is to build a flexible probabilistic model inspired by what we
+know about the physical properties of &lt;em&gt;Kepler&lt;/em&gt; and then optimize the
+parameters of this model to produce a light curve.&lt;/p&gt;
+&lt;p&gt;The figure at the top of this page shows a single frame observed in the
+engineering phase of K2 on the left and, on the right, the optimized model for
+the same frame.
+The code lives (and is being actively developed) on GitHub
+&lt;a href="https://github.com/dfm/kpsf"&gt;dfm/kpsf&lt;/a&gt; and the K2 data can be downloaded from
+&lt;a href="http://archive.stsci.edu/search_fields.php?mission=k2"&gt;MAST&lt;/a&gt; using Python and
+the git version of &lt;a href="https://github.com/dfm/kplr"&gt;kplr&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://astrohackweek.github.io/2014/blog/k2-photometry.html"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>hacking</category><category>kepler</category><category>probabilistic models</category><guid>http://astrohackweek.github.io/2014/blog/k2-photometry.html</guid><pubDate>Thu, 25 Sep 2014 18:00:00 GMT</pubDate></item><item><title>Multi-Output Random Forests</title><link>http://astrohackweek.github.io/2014/blog/multi-output-random-forests.html</link><dc:creator>Jake VanderPlas</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+    &lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Classic machine learning algorithms map multiple inputs to a single output. For example, you might have five photometric observations of a galaxy, and predict a single attribute or label (like the redshift, metallicity, etc.) When multiple ouputs are desired, standard practice is to essentially run two independent classifications: first predict one variable, then the next. The problem with this approach is that it completely ignores &lt;em&gt;correlations&lt;/em&gt; in the outputs.&lt;/p&gt;
+&lt;p&gt;This is my Thursday hack, which was to explore ideas to improve on this within Random Forests.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://astrohackweek.github.io/2014/blog/multi-output-random-forests.html"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>hacking</category><category>machine learning</category><category>python</category><category>random forests</category><guid>http://astrohackweek.github.io/2014/blog/multi-output-random-forests.html</guid><pubDate>Sat, 20 Sep 2014 18:30:00 GMT</pubDate></item></channel></rss>
