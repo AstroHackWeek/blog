@@ -1,2 +1,2 @@
-Sitemap: http://astrohackweek.github.io/2014/sitemapindex.xml
+Sitemap: http://astrohackweek.github.io/blog/sitemapindex.xml
 

@@ -1,461 +1,392 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+    <head>
     <meta charset="utf-8">
+    <meta name="description" content="The Astro Hack Week Blog">
+    <meta name="viewport" content="width=device-width">
+    <title>Astro Hack Week | Astro Hack Week</title>
 
-  <title>2014 Astro Hack Week</title>
-  <meta name="description" content="2014 Astro Hack Week">
-  <meta name="author" content="jakevdp">
+                <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 
-  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+                <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 
-    <!-- Place favicon.ico
-        in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="favicon.ico">
-  
-    <link rel="stylesheet" href="assets/css/site.css">
-  <link href="http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300" rel="stylesheet" type="text/css">
+      <link rel="canonical" href="http://astrohackweek.github.io/blog/index.html">
 
-  
-      </head>
-<body id="index">
 
-                  <nav class="main_nav">
-    <ul>
-                <li>
-            <a title="Homepage" class="button home" href="#home">
-                HOME
+
+    
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+
+    
+
+
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://astrohackweek.github.io">
+
+                <span id="blog-title">Astro Hack Week</span>
             </a>
-        </li>   <li>
-            <a title="Blog" class="button blog" href="blog/">
-                BLOG
-            </a>
-        </li>        <li>
-            <a title="About" class="button about" href="#about">
-                ABOUT
-            </a>
-        </li>        <li>
-            <a title="People" class="button people" href="#people">
-                PEOPLE
-            </a>
-        </li>        <li>
-            <a title="Schedule" class="button schedule" href="#schedule">
-                SCHEDULE
-            </a>
-        </li>        <li>
-            <a title="Sponsors" class="button sponsors" href="#sponsors">
-                SPONSORS
-            </a>
-        </li>    </ul>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                                <li class="active">
+<a href="#">Blog</a>
+                </li>
+<li>
+<a href="galleries/AstroHackWeek2014">Photos</a>
+                </li>
+<li>
+<a href="archive.html">Archive</a>
+                </li>
+<li>
+<a href="categories/index.html">Tags</a>
+                </li>
+<li>
+<a href="rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                
+            </ul>
+        </div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
 </nav>
-        
-<section id="top">
-  <a name="home"></a>
-  <h1>
-<img src="assets/images/Logo-transparent.png" width="38"> AstroData Hack Week</h1>
-  <h2>University of Washington</h2>
-  <h2>September 15-19, 2014</h2>
-</section>
+
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+<div class="postindex">
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="Hack-the-textbook-figures.html" class="u-url">Hack the textbook figures</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Michael Gully-Santiago</span></p>
+            <p class="dateline"><a href="Hack-the-textbook-figures.html" rel="bookmark"><time class="published dt-published" datetime="2014-10-07T08:30:00-07:00" itemprop="datePublished" title="Publication date">2014-10-07 08:30</time></a></p>
+                <p class="commentline">            <a href="Hack-the-textbook-figures.html#disqus_thread" data-disqus-identifier="cache/posts/hack-book-figs.html">Comments</a>
 
 
+        </p>
+</div>
+    </header>
+    <div class="p-summary entry-summary">
+    <div>
+<p>Every single figure in the <a href="http://press.princeton.edu/titles/10159.html">text book</a> <em>Statistics, Data Mining, and Machine Learning in Astronomy</em> is <a href="http://www.astroml.org/book_figures/">downloadable and fully reproducible online</a>.  Jake VanderPlas accomplished this heroic feat as a graduate student at the University of Washington.  Jake recalled the origin story to some of us at the hack week.  He explained that he would usually have the figure done the same week it was conceived, and was really pretty happy with the whole experience of being a part of making the textbook and ultimately becoming a coauthor.  His figures are now indispensable. Because of Jake's investment, generations of astronomers to come can now benefit from reproducing the explanatory material in the Textbook.  The figures are complementary to the textbook prose.  The textbook prose explains the theoretical framework underlying the concepts.  Equations are derived.  But by digging into the textbook figure Python code, the reader can see how the method is <em>implemented</em>, and try it out by tweaking the input.  "What happens if I double the noise? Or decimate the number of data points?  Or change this-or-that parameter?  How long does it take to run?"  </p>
+<p>These and other questions motivated my hack idea, which was to dig into the source code of textbook figures and do some hacking.  </p>
+<div id="test_figure"></div>
 
-<section class="text">
-  <a name="about"></a>
-  <div class="block">
+<script type="text/javascript" src="js/hack-book-figs.js"></script>
 
-    <p style="text-align:center;"><a href="https://twitter.com/AstroHackWeek" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @AstroHackWeek</a></p>
+<script>
+  draw_figure("test_figure");
+</script>
 
-    <p>
-      Astro Hack Week is a week-long summer school / hack week / unconference focused on astrostatistics and data-intensive astronomy.</p>
-
-    <p>The mornings will be a typical summer school format, with lectures and exercises covering essential skills for working effectively with large astronomical datasets. The afternoons will be entirely unstructured, and offer opportunities for collaborative research, breakout sessions on special topics, and application of the concepts covered during the morning sessions.</p>
-
-    <p>The vision is to provide a space to encourage learning, research, collaboration, and sharing of expertise, for the benefit of both young and experienced astronomical researchers alike.</p>
-
-    <h2 style="text-align:center;">Hack Week Wiki</h2>
-
-    <p>See our <a href="https://github.com/uwescience/AstroData/wiki">github wiki</a> for up-to-date information on scheduling and planning, including a partial list of who will be attending and what they plan to work on!</p>
-
-    <h2 style="text-align:center;">Registration</h2>
-
-    <p>This will be a relatively small event; we have space for about 40 people. Registration is <b>$50 per participant</b>, which will partially offset the costs of running the workshop.</p>
-    <p>We have reserved a block of rooms at the <a href="http://www.universityinnseattle.com/">University Inn</a>, a short walk from campus; the conference rate of $149 (single or double occupancy) is available first-come first-served.</p>
-
-    <!-- <a href="http://www.regonline.com/eventinfo.asp?eventid=1571399" class="RegButton">Register Now</a> -->
+<p>So on Wednesday of the Hack Week a table of about 8 of us all hacked the book figures.  The figure above is one of those figures, 
+</p>
+<p class="more"><a href="Hack-the-textbook-figures.html">Read more…</a></p>
+</div>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="bayesian-evidence.html" class="u-url">Bayesian Evidence Calculation</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Kyle Barbary</span></p>
+            <p class="dateline"><a href="bayesian-evidence.html" rel="bookmark"><time class="published dt-published" datetime="2014-10-03T08:00:00-07:00" itemprop="datePublished" title="Publication date">2014-10-03 08:00</time></a></p>
+                <p class="commentline">            <a href="bayesian-evidence.html#disqus_thread" data-disqus-identifier="cache/posts/bayesian-evidence.html">Comments</a>
 
 
-  </div>
-</section>
+        </p>
+</div>
+    </header>
+    <div class="p-summary entry-summary">
+    <div>
+<p>In a Bayesian framework, object classification or model comparison can
+be done naturally by comparing the Bayesian <em>evidence</em> between two or
+more models, given the data. The evidence is the integral of the
+likelihood of the data over the entire prior volume for all the model
+parameters, weighted by the prior. (The ratio of evidence for two
+different models is known as the <a href="http://en.wikipedia.org/wiki/Bayes_factor">Bayes
+Factor</a>.) This
+multi-dimensional integral gets increasingly computationally intensive
+as the number of parameters increases. As a result, several clever
+algorithms have been developed to efficiently approximate the answer.</p>
+<p>In this hack, I looked at a couple specific implementations of such
+algorithms in Python.</p>
+<p class="more"><a href="bayesian-evidence.html">Read more…</a></p>
+</div>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="ethnographic-notes.html" class="u-url">Hacked Ethnographic Fieldnotes</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Brittany Fiore-Silfvast</span></p>
+            <p class="dateline"><a href="ethnographic-notes.html" rel="bookmark"><time class="published dt-published" datetime="2014-10-01T12:00:00-07:00" itemprop="datePublished" title="Publication date">2014-10-01 12:00</time></a></p>
+                <p class="commentline">            <a href="ethnographic-notes.html#disqus_thread" data-disqus-identifier="cache/posts/ethnographic-notes.html">Comments</a>
 
-<section id="seattle"></section>
 
-<section class="text">
-  <a name="people"></a>
-  <div class="block">
-    <h2>People</h2>
-    <p>The following folks have been involved with planning this event, and will be teaching the morning sessions and facilitating the afternoon hack times:</p>
+        </p>
+</div>
+    </header>
+    <div class="p-summary entry-summary">
+    <div>
+<div style="float:left">
+<img src="images/fiore-silfvast.jpg" width="300px">
+</div>
 
-          <div class="bio" id="JoshuaBloom" style="float:left" onclick="displayBio('JoshuaBloom', 'fullbio');">
-     <img src="assets/images/bloom.jpg" class="bioPic" align="left">
-     <p class="bioName"><b>Joshua Bloom</b></p>
-     <div class="fullBio" style="display: none;">
-       <p><b>Joshua Bloom</b>
-       <a href="http://twitter.com/profjsb">
-         <img src="assets/images/twitter-black.png" class="icon" alt="twitter" title="twitter">
-       </a>       <a href="http://github.com/profjsb">
-         <img src="assets/images/github-black.png" class="icon" alt="github" title="github">
-       </a>       <a href="http://astro.berkeley.edu/~jbloom/">
-         <img src="assets/images/www-black.png" class="icon" alt="website" title="website">       </a></p>
-       <p></p>
-<p><i>University of California, Berkeley</i></p>
-<p>(bio coming soon)</p>
-     </div>
-   </div>
-    <div class="bio" id="ŽeljkoIvezić" style="float:left" onclick="displayBio('ŽeljkoIvezić', 'fullbio');">
-     <img src="assets/images/ivezic.jpg" class="bioPic" align="left">
-     <p class="bioName"><b>Željko Ivezić</b></p>
-     <div class="fullBio" style="display: none;">
-       <p><b>Željko Ivezić</b>
-       <a href="http://twitter.com/ivezic">
-         <img src="assets/images/twitter-black.png" class="icon" alt="twitter" title="twitter">
-       </a>       <a href="http://github.com/ivezic">
-         <img src="assets/images/github-black.png" class="icon" alt="github" title="github">
-       </a>       <a href="http://www.astro.washington.edu/users/ivezic/">
-         <img src="assets/images/www-black.png" class="icon" alt="website" title="website">       </a></p>
-       <p></p>
-<p>Željko Ivezić is a professor of astronomy at the University of Washington. His research interests are in detection, analysis and interpretation of electromagnetic radiation from astronomical sources.  He is lead author of <i>Statistics, Data Mining, and Machine Learning in Astronomy</i>, a graduate textbook for data-intensive astronomy. He serves as the Project Scientist for the Large Synoptic Survey Telescope project and currently chairs the American Astronomical Society's Working Group on Astroinformatics and Astrostatistics.</p>
-     </div>
-   </div>
-    <div class="bio" id="DavidWHogg" style="float:left" onclick="displayBio('DavidWHogg', 'fullbio');">
-     <img src="assets/images/hogg.jpg" class="bioPic" align="left">
-     <p class="bioName"><b>David W. Hogg</b></p>
-     <div class="fullBio" style="display: none;">
-       <p><b>David W. Hogg</b>
-       <a href="http://twitter.com/davidwhogg">
-         <img src="assets/images/twitter-black.png" class="icon" alt="twitter" title="twitter">
-       </a>       <a href="http://github.com/davidwhogg">
-         <img src="assets/images/github-black.png" class="icon" alt="github" title="github">
-       </a>       <a href="http://cosmo.nyu.edu/hogg/">
-         <img src="assets/images/www-black.png" class="icon" alt="website" title="website">       </a></p>
-       <p></p>
-<p>David W. Hogg is a professor of Physics and Astronomy at New York University. His main research interests are in observational cosmology, especially approaches that use galaxies (including our own Milky Way) to infer the physical properties of the Universe. He also works on exoplanet measurement and discovery. In both areas, he is interested in developing the engineering systems that make these projects possible, for his group and for the astrophysics community as a whole. His research is supported by New York University, NASA, the NSF, and the Humboldt Foundation.</p>
-<p>Hogg is working towards several comprehensive projects in observational astrophysics, including the measurement and simultaneous analysis of every galaxy (above some mass) in the observable Universe, every star (above some brightness) in our Galaxy, or every image (above some quality) taken by any astronomical camera. The comprehensive goals are long-term goals, but he is involved in present-day projects that work towards them, including Astrometry.net, Gaia, NYU-VAGC, and SDSS-III.</p>
-     </div>
-   </div>
+<p><em><a href="http://fioresilfvast.org/">Brittany Fiore-Silfvast</a> is a postdoctoral fellow with UW's Moore/Sloan-funded Data Science Environment and works as a data science ethnographer. Her research focuses on the social and organizational dimensions of data-intensive transformations in arenas such as scientific research, healthcare, global development, design and construction, and warfare.</em></p>
+<h4>What is data science ethnography anyway?</h4>
+<p>As an ethnographer of data science, I immerse myself in particular communities to understand how they make sense of the world, how they communicate, what motivates them, and how they work together. I spent a week at astro data hack week, which might as well have been a foreign culture to me. I participated as an active listener, trying to sensitize myself to the culture and discern patterns that may not be self-evident to people within the community. Ethnography can have the effect of making the ordinary strange, such that the norms, objects, and practices that the community takes for granted become fascinating, informative sites for learning and discovery. Many of the astro hackers were probably thinking, "Why is this woman hanging around watching me code on my laptop? There is nothing interesting here." But I assured them it was interesting to me because I was seeing their everyday practice in the context of a complex social and technical world that is in flux.</p>
+<p>Ethnography can be thought of as a form of big data. Typically hundreds of pages of fieldnotes, interview transcripts, and artifacts from the field would be recorded over a long period of time until the ethnographer determines they have reached a point of saturation. The analysis process co-occurs with the data collection, iteratively shaping the focus of the research and observation strategy. Across this massive dataset with an abundance of unwieldy dimensions, the ethnographer has to make sense. </p>
+<p class="more"><a href="ethnographic-notes.html">Read more…</a></p>
+</div>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="time-series-rf.html" class="u-url">Time Series Forecasting with Random Forest</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">James Davenport</span></p>
+            <p class="dateline"><a href="time-series-rf.html" rel="bookmark"><time class="published dt-published" datetime="2014-09-29T08:30:00-07:00" itemprop="datePublished" title="Publication date">2014-09-29 08:30</time></a></p>
+                <p class="commentline">            <a href="time-series-rf.html#disqus_thread" data-disqus-identifier="cache/posts/time-series-rf.html">Comments</a>
 
-    <div class="bio" id="DanielaHuppenkothen" style="float:left" onclick="displayBio('DanielaHuppenkothen', 'fullbio');">
-     <img src="assets/images/huppenkothen.jpg" class="bioPic" align="left">
-     <p class="bioName"><b>Daniela Huppenkothen</b></p>
-     <div class="fullBio" style="display: none;">
-       <p><b>Daniela Huppenkothen</b>
-       <a href="http://twitter.com/Tiana_Athriel">
-         <img src="assets/images/twitter-black.png" class="icon" alt="twitter" title="twitter">
-       </a>       <a href="http://github.com/dhuppenkothen">
-         <img src="assets/images/github-black.png" class="icon" alt="github" title="github">
-       </a>       <a href="http://www.huppenkothen.org">
-         <img src="assets/images/www-black.png" class="icon" alt="website" title="website">       </a></p>
-       <p></p>
-<p>Daniela Huppenkothen is a graduate student close to completing her PhD at the Anton Pannekoek Institute for Astronomy at the University of Amsterdam, and will join the NYU Center for Data Science as a postdoctoral fellow in late autumn. She is primarily interested in time series methods for astronomy; so far, her work has focussed on developing methods for characterising variability in fast transient events (in particular magnetar bursts) in data from X-ray space telescopes, and on using empirical models to make inferences about the underlying physics of the system. She is also interested in machine learning and astrostatistics.</p>
-     </div>
-   </div>
 
-    <div class="bio" id="PhilMarshall" style="float:left" onclick="displayBio('PhilMarshall', 'fullbio');">
-     <img src="assets/images/marshall.jpg" class="bioPic" align="left">
-     <p class="bioName"><b>Phil Marshall</b></p>
-     <div class="fullBio" style="display: none;">
-       <p><b>Phil Marshall</b>
-       <a href="http://twitter.com/drphilmarshall">
-         <img src="assets/images/twitter-black.png" class="icon" alt="twitter" title="twitter">
-       </a>       <a href="http://github.com/drphilmarshall">
-         <img src="assets/images/github-black.png" class="icon" alt="github" title="github">
-       </a>       <a href="http://www.slac.stanford.edu/~pjm/Site/Welcome.html">
-         <img src="assets/images/www-black.png" class="icon" alt="website" title="website">       </a></p>
-       <p></p>
-<p>Phil Marshall is a staff scientist at the Kavli Institute for Particle Astrophysics and Cosmology, at SLAC, Stanford University. His main research interest is observational cosmology using gravitational lensing: weighing galaxies, and measuring the expansion rate of the Universe. He is involved in a number of surveys to find new lenses, using both ground-based and space telescopes - including designing the strong lensing science analysis for LSST.</p>
-<p>Like all astrophysicists Marshall works in the low signal to noise regime, where information is at a premium and prior knowledge inevitably becomes important at some stage: developing probabilistic methods for data analysis is a continuing theme in his work.</p>
-     </div>
-   </div>
+        </p>
+</div>
+    </header>
+    <div class="p-summary entry-summary">
+    <div>
+<p>After <a href="http://astro.berkeley.edu/~jbloom/">Josh Bloom</a>'s wonderful lecture on <a href="http://en.wikipedia.org/wiki/Random_forest">Random Forest</a> regression I was excited to out his <a href="https://github.com/AstroHackWeek/AstroHackWeek2014/tree/master/day4">example code</a> on my <em>Kepler</em> data. Josh explained regression with machine learning as taking many data points with a variety of features/atributes, and using relationships between these features to predict some other parameter. He explained that the Random Forest algorithm works by constructing many decision trees, which are used to construct the final prediction.</p>
+<p><strong>I wondered: could I use the Random Forest (RF) to do time series forecasting?</strong> Of course, as <a href="http://astrohackweek.github.io/blog/multi-output-random-forests.html">Jake noted</a>, RF only predicts single properties. As a result, RF isn't a good choice for doing trend forecasting over long time periods. (well, maybe) Instead, this would use RF to just predict the <em>next</em> datapoint.</p>
+<p class="more"><a href="time-series-rf.html">Read more…</a></p>
+</div>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="k2-photometry.html" class="u-url">K2 Photometry</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Dan Foreman-Mackey</span></p>
+            <p class="dateline"><a href="k2-photometry.html" rel="bookmark"><time class="published dt-published" datetime="2014-09-25T11:00:00-07:00" itemprop="datePublished" title="Publication date">2014-09-25 11:00</time></a></p>
+                <p class="commentline">            <a href="k2-photometry.html#disqus_thread" data-disqus-identifier="cache/posts/k2-photometry.html">Comments</a>
 
-    <div class="bio" id="FernandoPerez" style="float:left" onclick="displayBio('FernandoPerez', 'fullbio');">
-     <img src="assets/images/perez.jpg" class="bioPic" align="left">
-     <p class="bioName"><b>Fernando Perez</b></p>
-     <div class="fullBio" style="display: none;">
-       <p><b>Fernando Perez</b>
-       <a href="http://twitter.com/fperez_org">
-         <img src="assets/images/twitter-black.png" class="icon" alt="twitter" title="twitter">
-       </a>       <a href="http://github.com/fperez">
-         <img src="assets/images/github-black.png" class="icon" alt="github" title="github">
-       </a>       <a href="http://fperez.org/">
-         <img src="assets/images/www-black.png" class="icon" alt="website" title="website">       </a></p>
-       <p></p>
-<p>Fernando Perez received his PhD in theoretical physics from the University of Colorado and then worked on numerical algorithm development at the Applied Mathematics Dept. at the same university.  In 2001, he became involved with the nascent scientific Python community, and hasn't left. He created <a href="http://ipython.org">IPython</a> while a graduate student looking for efficient interactive research tools. He continues to lead the IPython project along with a talented team that does all the hard work.  He is currently a research scientist at the Helen Wills Neuroscience Institute at the University of California, Berkeley, focusing on the development of new tools for scientific computing and data science, drawing from problems in brain imaging and other disciplines.</p>
-<p>Perez regularly lectures about scientific computing in Python, and is a member of the Python Software Foundation as well as a founding board member of the Numfocus Foundation. He is the recipient of the 2012 Award for the Advancement of Free Software from the Free Software Foundation.</p>
-     </div>
-   </div>
 
-    <div class="bio" id="JakeVanderPlas" style="float:left" onclick="displayBio('JakeVanderPlas', 'fullbio');">
-     <img src="assets/images/vanderplas.jpg" class="bioPic" align="left">
-     <p class="bioName"><b>Jake VanderPlas</b></p>
-     <div class="fullBio" style="display: none;">
-       <p><b>Jake VanderPlas</b>
-       <a href="http://twitter.com/jakevdp">
-         <img src="assets/images/twitter-black.png" class="icon" alt="twitter" title="twitter">
-       </a>       <a href="http://github.com/jakevdp">
-         <img src="assets/images/github-black.png" class="icon" alt="github" title="github">
-       </a>       <a href="http://www.astro.washington.edu/users/jakevdp">
-         <img src="assets/images/www-black.png" class="icon" alt="website" title="website">       </a></p>
-       <p></p>
-<p>Jake VanderPlas is the Director of Research in the Physical Sciences at the University of Washington’s eScience Institute, where his research is primarily in the area of novel statistical approaches to datasets from astronomy and other fields. He is co-author of the graduate-level text, <i>Statistics, Data Mining, and Machine Learning in Astronomy</i>, and is a maintainer and/or frequent contributor to many scientific open source Python projects, including SciPy, Scikit-learn, mpld3, astroML, and others. He occasionally blogs about Python, machine learning, scientific visualization, open science, and related topics at <a href="http://jakevdp.github.io">Pythonic Perambulations</a>.</p>
-     </div>
-   </div>
-  </div>
-</section>
+        </p>
+</div>
+    </header>
+    <div class="p-summary entry-summary">
+    <div>
+<div style="float: left; padding-bottom: 6px;">
+    <img src="images/dfm-adhw-img.png" width="500">
+</div>
 
-<section id="fall-leaves"></section>
+<p>For my AstroHackWeek project, I decided to hack on the new images coming from
+<a href="http://keplerscience.arc.nasa.gov/K2/">NASA's K2 mission</a>, the second
+generation of the <em>Kepler</em> satellite.
+The original <em>Kepler</em> mission obtained exquisite precision in the photometry
+because the satellite's pointing was stable to better than a hundredth of a
+pixel.
+For <em>K2</em>, this is no longer the case.
+Therefore, we'll need to work a little harder to extract useful photometric
+measurements from these data.
+That being said, these pointing variations also break some of the degeneracies
+between the flat field of the detector and the PSF so we might be able to
+learn some things about <em>Kepler</em> that we couldn't have with the previous data
+releases.</p>
+<p>At the hack week, I got a proof-of-concept implemented but there's definitely
+a lot to do if we want to develop a general method.
+The basic idea is to build a flexible probabilistic model inspired by what we
+know about the physical properties of <em>Kepler</em> and then optimize the
+parameters of this model to produce a light curve.</p>
+<p>The figure at the top of this page shows a single frame observed in the
+engineering phase of K2 on the left and, on the right, the optimized model for
+the same frame.
+The code lives (and is being actively developed) on GitHub
+<a href="https://github.com/dfm/kpsf">dfm/kpsf</a> and the K2 data can be downloaded from
+<a href="http://archive.stsci.edu/search_fields.php?mission=k2">MAST</a> using Python and
+the git version of <a href="https://github.com/dfm/kplr">kplr</a>.</p>
+<p class="more"><a href="k2-photometry.html">Read more…</a></p>
+</div>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="hack-week-thoughts-blog-twitter.html" class="u-url">Hack Week Responses: Blogs and Twitter</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Jake VanderPlas</span></p>
+            <p class="dateline"><a href="hack-week-thoughts-blog-twitter.html" rel="bookmark"><time class="published dt-published" datetime="2014-09-24T10:00:00-07:00" itemprop="datePublished" title="Publication date">2014-09-24 10:00</time></a></p>
+                <p class="commentline">            <a href="hack-week-thoughts-blog-twitter.html#disqus_thread" data-disqus-identifier="cache/posts/hack-week-thoughts-blog-twitter.html">Comments</a>
 
-<section class="text">
-  <a name="schedule"></a>
-  <div class="block">
-    <h2>Schedule</h2>
 
-    <p>
-    Each day will consist of <b>morning sessions</b> devoted to learning
-    fundamentals of computational astronomy, and <b>afternoon sessions</b>
-    devoted to unstructured research, hacking, and collaboration,
-    with the potential
-    for informal breakout sessions on special topics of interest.
-    </p>
-    <p>
-    We will be making use of the textbook <a href="http://press.princeton.edu/titles/10159.html"><i>Statistics, Data Mining, and Machine Learning in Astronomy</i></a> by Ivezić, Connolly, VanderPlas, and Gray. It is not required, but we encourage you to bring a copy if you have it!
-    </p>
-    <p>
-    The following is an initial draft of the schedule; there will likely be
-    modifications made in the weeks leading up to the conference.
-    </p>
+        </p>
+</div>
+    </header>
+    <div class="p-summary entry-summary">
+    <div>
+<p><img src="galleries/AstroHackWeek2014/hackweek_panorama.jpg" width="100%"></p>
+<p>We're still working on getting some hack summaries here on the website. In the mean-time, some of the hack week participants have been blogging and writing about their own thoughts from the week! I wanted to compile a few of these responses here:</p>
+<ul>
+<li>
+<p><strong>Ruth Angus' post on <a href="http://astrobites.org/2014/09/24/astro-data-hack-week/">AstroBites</a>:</strong> a great high-level summary of what went on through the week! Ruth does a great job capturing the spirit of the event, as well as some details on things she learned and took home.</p>
+</li>
+<li>
+<p><strong>David Hogg's daily research posts:</strong> If you've never come across <a href="http://hoggresearch.blogspot.com/">Hogg's Research Blog</a>, it's worth digging around in it for a while. Each day, Hogg writes a brief summary of what he worked on or thought about for the day, and the result is a nearly decade-long log of his scientific ideas and interactions. He did this through the hack week as well, and you can read his thoughts here: <a href="http://hoggresearch.blogspot.com/2014/09/astrodata-hack-week-day-1.html">Day 1</a>, <a href="http://hoggresearch.blogspot.com/2014/09/astrodata-hack-week-day-2.html">Day 2</a>, <a href="http://hoggresearch.blogspot.com/2014/09/astrodata-hack-week-day-3.html">Day 3</a>, <a href="http://hoggresearch.blogspot.com/2014/09/astrodata-hack-week-day-4.html">Day 4</a>, <a href="http://hoggresearch.blogspot.com/2014/09/astrodata-hack-week-day-5.html">Day 5</a>.</p>
+</li>
+<li>
+<p><strong>Adrian Price-Whelan's <a href="http://apwhelan.blogspot.com/2014/09/cell-macros-in-ipython-notebook.html">IPython Cell Macros</a> hack:</strong> so often when starting up an IPython notebook, we find ourselves importing all the same tools in the first cell. Now there's a button which adds this cell automatically!</p>
+</li>
+<li>
+<p><strong>UW eScience has a quick <a href="http://escience.washington.edu/blog/astrodata-hack-week-2014">writeup</a>:</strong> drawn mostly from our earlier post here. Great to have recognition from one of our sponsoring organizations!</p>
+</li>
+</ul>
+<p>And of course, there's always Twitter. Many of the week's participants were tweeting with the <a href="https://twitter.com/hashtag/astrohackweek">#AstroHackWeek</a> tag. Below are a few randomly-chosen highlights.</p>
+<p>I know that I, for one, am really hoping this happens again.</p>
+<p class="more"><a href="hack-week-thoughts-blog-twitter.html">Read more…</a></p>
+</div>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="multi-output-random-forests.html" class="u-url">Multi-Output Random Forests</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Jake VanderPlas</span></p>
+            <p class="dateline"><a href="multi-output-random-forests.html" rel="bookmark"><time class="published dt-published" datetime="2014-09-20T11:30:00-07:00" itemprop="datePublished" title="Publication date">2014-09-20 11:30</time></a></p>
+                <p class="commentline">            <a href="multi-output-random-forests.html#disqus_thread" data-disqus-identifier="cache/posts/multi-output-random-forests.html">Comments</a>
 
-    <h4>Monday, September 15th</h4>
-    <table>
-      <tr>
-<td>9:00am-9:30am</td>
-<td>Coffee</td>
-</tr>
-<td>9:30am-12:00pm</td>
-    <td>
-      Scientific Computing with Python
-      <ul>
-        <li>Interactive Computing &amp; Reproducible Research with IPython</li>
-        <li>Effective Computing with NumPy</li>
-        <li>Visualization with Matplotlib</li>
-        <li>Exploring computational tools available in SciPy</li>
-      </ul>
-    </td>
-      
-      <tr>
-<td>12:00pm-12:30pm</td>
-<td>Hack Idea Intros</td>
-</tr>
-      <tr>
-<td>12:30pm-1:30pm</td>
-<td>Lunch on-site</td>
-</tr>
-      <tr>
-<td>1:30pm-5:30pm</td>
-<td>Hack time &amp; Breakouts</td>
-</tr>
-      <tr>
-<td>5:30pm-6:00pm</td>
-<td>Daily Wrap-up</td>
-</tr>
-    </table>
-    <h4>Tuesday, September 16th</h4>
-    <table>
-      <tr>
-<td>9:00am-9:30am</td>
-<td>Coffee</td>
-</tr>
-<td>9:30am-12:30pm</td>
-    <td>
-      Classical Statistics &amp; Modeling
-      <ul>
-        <li>Intro to classical probability theory</li>
-        <li>Maximum likelihood Optimization &amp; Uncertainty Quantification</li>
-        <li>Goodness of Fit and Hypothesis Testing</li>
-        <li>Confidence Estimates using Bootstrap</li>
-      </ul>
-    </td>
-      
-      <tr>
-<td>12:30pm-1:30pm</td>
-<td>Lunch on-site</td>
-</tr>
-      <tr>
-<td>1:30pm-5:30pm</td>
-<td>Hack time &amp; Breakouts</td>
-</tr>
-      <tr>
-<td>5:30pm-6:00pm</td>
-<td>Daily Wrap-up</td>
-</tr>
-    </table>
-    <h4>Wednesday, September 17th</h4>
-    <table>
-      <tr>
-<td>9:00am-9:30am</td>
-<td>Coffee</td>
-</tr>
-<td>9:30am-12:30pm</td>
-    <td>
-      Bayesian Statistics &amp; Modeling
-      <ul>
-        <li>Bayes' Theorem and Bayesian probability</li>
-        <li>Bayesian Priors</li>
-        <li>Posterior optimization, marginalization, and Uncertainty Quantification</li>
-        <li>Hypothesis Testing</li>
-        <li>Intro to Markov Chain Monte Carlo (MCMC) sampling</li>
-      </ul>
-    </td>
-      
-      <tr>
-<td>12:30pm-1:30pm</td>
-<td>Lunch on-site</td>
-</tr>
-      <tr>
-<td>1:30pm-5:30pm</td>
-<td>Hack time &amp; Breakouts</td>
-</tr>
-      <tr>
-<td>5:30pm-6:00pm</td>
-<td>Daily Wrap-up</td>
-</tr>
-    </table>
-    <h4>Thursday, September 18th</h4>
-    <table>
-      <tr>
-<td>9:00am-9:30am</td>
-<td>Coffee</td>
-</tr>
-<td>9:30am-12:30pm</td>
-    <td>
-      Supervised Machine Learning &amp; Model Fitting
-      <ul>
-        <li>Supervised Machine Learning: Classification vs Regression</li>
-        <li>A survey of Classification techniques</li>
-        <li>A survey of Regression techniques</li>
-      </ul>
-    </td>
-      
-      <tr>
-<td>12:30pm-1:30pm</td>
-<td>Lunch on-site</td>
-</tr>
-      <tr>
-<td>1:30pm-5:30pm</td>
-<td>Hack time &amp; Breakouts</td>
-</tr>
-      <tr>
-<td>5:30pm-6:00pm</td>
-<td>Daily Wrap-up</td>
-</tr>
-      <tr>
-<td><i>7:00pm-late</i></td>
-<td><i>off-site dinner and hackathon</i></td>
-</tr>
-    </table>
-    <h4>Friday, September 19th</h4>
-    <table>
-      <tr>
-<td>9:00am-9:30am</td>
-<td>Coffee</td>
-</tr>
-<td>9:30am-12:30pm</td>
-    <td>
-      Unsupervised Machine Learning &amp; Data Mining
-      <ul>
-        <li>Dimensionality Reduction Algorithms</li>
-        <li>Clustering Algorithms</li>
-        <li>Density Estimation Algorithms</li>
-      </ul>
-    </td>
-      
-      <tr>
-<td>12:30pm-1:30pm</td>
-<td>Lunch on-site</td>
-</tr>
-      <tr>
-<td>1:30pm-5:00pm</td>
-<td>Hack time &amp; Breakouts</td>
-</tr>
-      <tr>
-<td>5:00pm-6:00pm</td>
-<td>Week Wrap-up</td>
-</tr>
-    </table>
-    <p>
-      Because of the unique and unstructured nature of this hack week, we
-      suggest that you come prepared! Come with a project in mind, with data
-      to explore, with a colleague to collaborate with. This should not be a
-      week away from work, but a week to try some new approaches to your
-      current research topic!
-    </p>
-  </div>
 
-</section>
+        </p>
+</div>
+    </header>
+    <div class="p-summary entry-summary">
+    <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
 
-<section id="fountain"></section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Classic machine learning algorithms map multiple inputs to a single output. For example, you might have five photometric observations of a galaxy, and predict a single attribute or label (like the redshift, metallicity, etc.) When multiple ouputs are desired, standard practice is to essentially run two independent classifications: first predict one variable, then the next. The problem with this approach is that it completely ignores <em>correlations</em> in the outputs.</p>
+<p>This is my Thursday hack, which was to explore ideas to improve on this within Random Forests.</p>
+<p class="more"><a href="multi-output-random-forests.html">Read more…</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="astro-hack-week-wrapup.html" class="u-url">Astro Hack Week Wrapup</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Jake VanderPlas</span></p>
+            <p class="dateline"><a href="astro-hack-week-wrapup.html" rel="bookmark"><time class="published dt-published" datetime="2014-09-20T09:00:00-07:00" itemprop="datePublished" title="Publication date">2014-09-20 09:00</time></a></p>
+                <p class="commentline">            <a href="astro-hack-week-wrapup.html#disqus_thread" data-disqus-identifier="cache/posts/astro-hack-week-wrapup.html">Comments</a>
 
-<section class="text">
-  <a name="sponsors"></a>
-  <div class="block">
-    <h2>Sponsors</h2>
-    <p>This workshop is being organized as part of the <a href="http://escience.washington.edu/blog/uw-berkeley-nyu-collaborate-378m-data-science-initiative">Moore-Sloan Data Science Initiative</a>, together with the University of Washington, University of California Berkeley, and New York University. It is made possible by the following sponsors:</p>
-    <p><a href="http://escience.washington.edu"><img class="logo" src="assets/images/eScienceLogo.png"></a></p>
-    <p><a href="http://www.moore.org"><img class="logo" src="assets/images/MooreFoundation.png"></a></p>
-    <p><a href="http://www.sloan.org"><img class="logo" src="assets/images/SloanFoundation.png"></a></p>
-  </div>
-</section>
 
-<section id="uwcampus"></section>
+        </p>
+</div>
+    </header>
+    <div class="p-summary entry-summary">
+    <div>
+<div style="float:left">
+<img src="images/HackWeek.jpg" width="300px">
+<br>
+<small>Photo by <a href="http://instagram.com/p/s_kq-OKS_p/">Adrian Price-Whelan</a></small>
+</div>
 
-      <section class="footer">
-     <p>Website created with <a href="http://getnicola.com/">Nikola</a>.  Layout by Jake VanderPlas.</p>
-    </section>
-  
+<p>The first <a href="http://astrohackweek.github.io">Astro Hack Week</a> took place from September 15-19, 2014 at University of Washington. We had about 45 attendees through the week. We spent the mornings together learning new coding, statistics, and data analysis skills, and spent the afternoons working in pairs and groups on a wide variety of projects. These projects spanned a range of topics, and comprised everything from short exercises to development of teaching materials to full-blown research projects which will likely lead to publications!</p>
+<p>Along with these hacks, the afternoons were also punctuated by informal breakout sessions on everything from using Git to constructing Probabilistic Graphical Models. Thanks to all the participants who stepped up to lead these breakouts and share their expertise with others!</p>
+<p>We've set up this blog to report and record some of the results of the workshop. Over the next few weeks, we hope that everyone who attended will write a short post (or two!) and let us know what they worked on and learned during the week!</p>
+<p>Finally, a <strong>huge</strong> thanks to our sponsors, the <a href="http://www.moore.org">Moore Foundation</a>, the <a href="http://www.sloan.org">Sloan Foundation</a>, and the <a href="http://escience.washington.edu">UW eScience Institute</a>.</p>
+<p>Stay tuned, and look for more posts in the coming days and weeks!</p>
+</div>
+    </div>
+    </article>
+</div>
 
-      <script src="assets/js/jquery-1.11.0.min.js"></script>
-  
-      <script defer src="assets/js/main.js"></script>
-    <script type="text/JavaScript">
-      var currentID = null;
-      function displayBio(bioID){
-        var bioDiv = $("#" + bioID);
-        var fullBio = $(".displayBio." + bioID);
+               <script>var disqus_shortname="astrohackweek";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 
-        // first time around we move the content of the hidden bio div to
-        // the correctly-placed destination div
-        if (fullBio.length == 0){
-          $(bioDiv).parent().parent().append("<div class='block displayBio " + bioID + "' style='display:none;'></div>");
-          fullBio = $(".displayBio." + bioID);
-          fullBio.html(bioDiv.children(".fullBio").html());
-          bioDiv.children(".fullBio").remove();
-        }
-        if(currentID == bioID){
-          // clicking on the highlighted picture: hide bio & remove highlight
-          $(".bio").children().animate({opacity:1.0}, 200);
-          $(".displayBio").hide(200);
-          currentID = null;
-        }else{
-          // clicking on a non-highlighted picture: switch bios
-          if(currentID !== null){
-            $(".displayBio." + currentID).hide(200);
-          }
-          bioDiv.children().animate({opacity:1.0}, 200);
-          $(".bio").not(bioDiv).children().animate({opacity:0.3}, 200);
-          fullBio.show(200);
-          currentID = bioID;
-        }
-      }
+
+        </div>
+        <!--End of body content-->
+
+        <footer>
+            Contents © 2015         <a href="mailto:jakevdp@cs.washington.edu">Jake VanderPlas</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+    </div>
+</div>
+
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/mathjax.js"></script>
+        <script src="assets/js/jquery.colorbox-min.js"></script>
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul>
+<li>
+<a class="addthis_button_facebook"></a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"></a>
+</li>
+<li>
+<a class="addthis_button_linkedin"></a>
+</li>
+<li>
+<a class="addthis_button_twitter"></a>
+</li>
+</ul>
+</div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script>jQuery("a.image-reference,!.islink").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+    <!-- fancy dates -->
+    <script>
+    moment.locale("");
+    fancydates(0, "YYYY-MM-DD HH:mm");
     </script>
-    </body>
+    <!-- end fancy dates -->
 
+
+</body>
 </html>

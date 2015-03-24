@@ -5,8 +5,9 @@ article: http://ogp.me/ns/article#
 " lang="en">
     <head>
     <meta charset="utf-8">
+    <meta name="description" content="Tags">
     <meta name="viewport" content="width=device-width">
-    <title>galleries | Astro Hack Week</title>
+    <title>Tags | Astro Hack Week</title>
 
                 <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
@@ -18,7 +19,7 @@ article: http://ogp.me/ns/article#
 
                 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 
-      <link rel="canonical" href="http://astrohackweek.github.io/blog/galleries/index.html">
+      <link rel="canonical" href="http://astrohackweek.github.io/blog/categories/index.html">
 
 
 
@@ -27,15 +28,6 @@ article: http://ogp.me/ns/article#
 
     
 
-
-<style type="text/css">
-    .image-block {
-        display: inline-block;
-    }
-    .flowr_row {
-        width: 100%;
-    }
-    </style>
 
 </head>
 <body>
@@ -65,13 +57,13 @@ article: http://ogp.me/ns/article#
 <a href="../index.html">Blog</a>
                 </li>
 <li>
-<a href="AstroHackWeek2014">Photos</a>
+<a href="../galleries/AstroHackWeek2014">Photos</a>
                 </li>
 <li>
 <a href="../archive.html">Archive</a>
                 </li>
-<li>
-<a href="../categories/index.html">Tags</a>
+<li class="active">
+<a href="#">Tags</a>
                 </li>
 <li>
 <a href="../rss.xml">RSS feed</a>
@@ -96,19 +88,25 @@ article: http://ogp.me/ns/article#
         <!--Body content-->
         <div class="row">
             
-    <nav class="breadcrumbs">
-<ul class="breadcrumb">
-        <li><a href="#">galleries</a></li>
-</ul>
-</nav>
-
-    <h1>galleries</h1>
-    <ul>
-        <li><a href="AstroHackWeek2014/"><i class="glyphicon
-        glyphicon-folder-open"></i> AstroHackWeek2014</a></li>
+<h1>Tags</h1>
+    <ul class="list-inline">
+        <li><a class="reference badge" href="bayesian-evidence.html">bayesian evidence</a></li>
+        <li><a class="reference badge" href="blog-roll.html">blog roll</a></li>
+        <li><a class="reference badge" href="ethnography.html">ethnography</a></li>
+        <li><a class="reference badge" href="hacking.html">hacking</a></li>
+        <li><a class="reference badge" href="ipython-notebook.html">IPython Notebook</a></li>
+        <li><a class="reference badge" href="kepler.html">kepler</a></li>
+        <li><a class="reference badge" href="machine-learning.html">machine learning</a></li>
+        <li><a class="reference badge" href="probabilistic-models.html">probabilistic models</a></li>
+        <li><a class="reference badge" href="python.html">python</a></li>
+        <li><a class="reference badge" href="random-forest.html">random forest</a></li>
+        <li><a class="reference badge" href="random-forests.html">random forests</a></li>
+        <li><a class="reference badge" href="statistics.html">statistics</a></li>
+        <li><a class="reference badge" href="summary.html">summary</a></li>
+        <li><a class="reference badge" href="time-series.html">time series</a></li>
+        <li><a class="reference badge" href="twitter.html">twitter</a></li>
+        <li><a class="reference badge" href="visualization.html">visualization</a></li>
     </ul>
-
-<div id="gallery_container"></div>
         </div>
         <!--End of body content-->
 
@@ -153,44 +151,6 @@ article: http://ogp.me/ns/article#
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script>
     <!-- end fancy dates -->
-<script src="../assets/js/flowr.plugin.js"></script>
-<script>
-jsonContent = [];
-$("#gallery_container").flowr({
-        data : jsonContent,
-        height : 180*.6,
-        padding: 5,
-        rows: -1,
-        render : function(params) {
-            // Just return a div, string or a dom object, anything works fine
-            img = $("<img />").attr({
-                'src': params.itemData.url_thumb,
-                'width' : params.width,
-                'height' : params.height
-            }).css('max-width', '100%');
-            link = $( "<a></a>").attr({
-                'href': params.itemData.url,
-                'class': 'image-reference'
-            });
-            div = $("<div />").addClass('image-block').attr({
-                'title': params.itemData.title,
-                'data-toggle': "tooltip",
-            });
-            link.append(img);
-            div.append(link);
-            div.hover(div.tooltip());
-            return div;
-        },
-        itemWidth : function(data) { return data.size.w; },
-        itemHeight : function(data) { return data.size.h; },
-        complete : function(params) {
-            if( jsonContent.length > params.renderedItems ) {
-                nextRenderList = jsonContent.slice( params.renderedItems );
-            }
-        }
-    });
-$("a.image-reference").colorbox({rel:"gal", maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
-</script>
 
 
 </body>

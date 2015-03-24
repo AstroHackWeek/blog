@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>galleries | Astro Hack Week</title>
+    <title>Posts about hacking | Astro Hack Week</title>
 
                 <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
@@ -18,7 +18,7 @@ article: http://ogp.me/ns/article#
 
                 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 
-      <link rel="canonical" href="http://astrohackweek.github.io/blog/galleries/index.html">
+      <link rel="canonical" href="http://astrohackweek.github.io/blog/categories/hacking.html">
 
 
 
@@ -27,15 +27,8 @@ article: http://ogp.me/ns/article#
 
     
 
-
-<style type="text/css">
-    .image-block {
-        display: inline-block;
-    }
-    .flowr_row {
-        width: 100%;
-    }
-    </style>
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS for tag hacking" href="hacking.xml">
 
 </head>
 <body>
@@ -65,13 +58,13 @@ article: http://ogp.me/ns/article#
 <a href="../index.html">Blog</a>
                 </li>
 <li>
-<a href="AstroHackWeek2014">Photos</a>
+<a href="../galleries/AstroHackWeek2014">Photos</a>
                 </li>
 <li>
 <a href="../archive.html">Archive</a>
                 </li>
 <li>
-<a href="../categories/index.html">Tags</a>
+<a href="index.html">Tags</a>
                 </li>
 <li>
 <a href="../rss.xml">RSS feed</a>
@@ -96,19 +89,28 @@ article: http://ogp.me/ns/article#
         <!--Body content-->
         <div class="row">
             
-    <nav class="breadcrumbs">
-<ul class="breadcrumb">
-        <li><a href="#">galleries</a></li>
-</ul>
-</nav>
-
-    <h1>galleries</h1>
-    <ul>
-        <li><a href="AstroHackWeek2014/"><i class="glyphicon
-        glyphicon-folder-open"></i> AstroHackWeek2014</a></li>
+<article class="tagpage">
+    <header>
+        <h1>Posts about hacking</h1>
+        <div class="metadata">
+                <p class="feedlink"><a href="hacking.xml" type="application/rss+xml">RSS feed</a></p>
+        </div>
+    </header>
+    <ul class="postlist">
+        <li>
+<a href="../Hack-the-textbook-figures.html" class="listtitle">Hack the textbook figures</a> <time class="listdate" datetime="2014-10-07T08:30:00-07:00" title="2014-10-07 08:30">2014-10-07 08:30</time>
+</li>
+        <li>
+<a href="../bayesian-evidence.html" class="listtitle">Bayesian Evidence Calculation</a> <time class="listdate" datetime="2014-10-03T08:00:00-07:00" title="2014-10-03 08:00">2014-10-03 08:00</time>
+</li>
+        <li>
+<a href="../k2-photometry.html" class="listtitle">K2 Photometry</a> <time class="listdate" datetime="2014-09-25T11:00:00-07:00" title="2014-09-25 11:00">2014-09-25 11:00</time>
+</li>
+        <li>
+<a href="../multi-output-random-forests.html" class="listtitle">Multi-Output Random Forests</a> <time class="listdate" datetime="2014-09-20T11:30:00-07:00" title="2014-09-20 11:30">2014-09-20 11:30</time>
+</li>
     </ul>
-
-<div id="gallery_container"></div>
+</article>
         </div>
         <!--End of body content-->
 
@@ -153,44 +155,6 @@ article: http://ogp.me/ns/article#
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script>
     <!-- end fancy dates -->
-<script src="../assets/js/flowr.plugin.js"></script>
-<script>
-jsonContent = [];
-$("#gallery_container").flowr({
-        data : jsonContent,
-        height : 180*.6,
-        padding: 5,
-        rows: -1,
-        render : function(params) {
-            // Just return a div, string or a dom object, anything works fine
-            img = $("<img />").attr({
-                'src': params.itemData.url_thumb,
-                'width' : params.width,
-                'height' : params.height
-            }).css('max-width', '100%');
-            link = $( "<a></a>").attr({
-                'href': params.itemData.url,
-                'class': 'image-reference'
-            });
-            div = $("<div />").addClass('image-block').attr({
-                'title': params.itemData.title,
-                'data-toggle': "tooltip",
-            });
-            link.append(img);
-            div.append(link);
-            div.hover(div.tooltip());
-            return div;
-        },
-        itemWidth : function(data) { return data.size.w; },
-        itemHeight : function(data) { return data.size.h; },
-        complete : function(params) {
-            if( jsonContent.length > params.renderedItems ) {
-                nextRenderList = jsonContent.slice( params.renderedItems );
-            }
-        }
-    });
-$("a.image-reference").colorbox({rel:"gal", maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
-</script>
 
 
 </body>

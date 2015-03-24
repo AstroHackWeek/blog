@@ -5,83 +5,151 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/bayesian-evidence.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/bayesian-evidence.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/blog-roll.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/blog-roll.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/ethnography.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/ethnography.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/hacking.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/hacking.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/ipython-notebook.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/ipython-notebook.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/kepler.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/kepler.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/machine-learning.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/machine-learning.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/probabilistic-models.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/probabilistic-models.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/python.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/python.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/random-forest.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/random-forest.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/random-forests.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/random-forests.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/statistics.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/statistics.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/summary.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/summary.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/time-series.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/time-series.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/twitter.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/twitter.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/categories/visualization.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/categories/visualization.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/blog/rss.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/blog/rss.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/galleries/AstroHackWeek2014/rss.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/categories/bayesian-evidence.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/galleries/rss.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/categories/blog-roll.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://astrohackweek.github.io/2014/sitemap.xml</loc>
+  <loc>http://astrohackweek.github.io/blog/categories/ethnography.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/categories/hacking.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/categories/ipython-notebook.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/categories/kepler.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/categories/machine-learning.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/categories/probabilistic-models.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/categories/python.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/categories/random-forest.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/categories/random-forests.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/categories/statistics.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/categories/summary.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/categories/time-series.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/categories/twitter.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/categories/visualization.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/galleries/AstroHackWeek2014/rss.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/galleries/rss.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/rss.xml</loc>
+  <lastmod>2015-03-23</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://astrohackweek.github.io/blog/sitemap.xml</loc>
   <lastmod>2015-03-23</lastmod>
  </sitemap>
 </sitemapindex>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Description of Jim Davenport's Random Forest Time Series hack.">
+    <meta name="viewport" content="width=device-width">
+    <title>Time Series Forecasting with Random Forest | Astro Hack Week</title>
+
+                <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+
+                <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+
+      <link rel="canonical" href="http://astrohackweek.github.io/blog/time-series-rf.html">
+
+
+
+    
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+
+    
+
+    
+    <meta name="author" content="James Davenport">
+        <meta property="og:site_name" content="Astro Hack Week">
+    <meta property="og:title" content="Time Series Forecasting with Random Forest">
+    <meta property="og:url" content="http://astrohackweek.github.io/blog/time-series-rf.html">
+    <meta property="og:description" content="Description of Jim Davenport's Random Forest Time Series hack.">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2014-09-29T08:30:00-07:00">
+           <meta property="article:tag" content="random forest">
+           <meta property="article:tag" content="summary">
+           <meta property="article:tag" content="time series">
+
+    
+    
+
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://astrohackweek.github.io">
+
+                <span id="blog-title">Astro Hack Week</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                                <li>
+<a href="index.html">Blog</a>
+                </li>
+<li>
+<a href="galleries/AstroHackWeek2014">Photos</a>
+                </li>
+<li>
+<a href="archive.html">Archive</a>
+                </li>
+<li>
+<a href="categories/index.html">Tags</a>
+                </li>
+<li>
+<a href="rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+
+            <ul class="nav navbar-nav navbar-right">
+    <li>
+    <a href="time-series-rf.md" id="sourcelink">Source</a>
+    </li>
+                
+            </ul>
+        </div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav>
+
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
+        <header>
+            <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Time Series Forecasting with Random Forest</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">James Davenport</span></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2014-09-29T08:30:00-07:00" itemprop="datePublished" title="2014-09-29 08:30">2014-09-29 08:30</time></a></p>
+                <p class="commentline">            <a href="time-series-rf.html#disqus_thread" data-disqus-identifier="cache/posts/time-series-rf.html">Comments</a>
+
+
+                    </p>
+<p class="sourceline"><a href="time-series-rf.md" id="sourcelink">Source</a></p>
+
+                <meta name="description" itemprop="description" content="Description of Jim Davenport's Random Forest Time Series hack.">
+        </div>
+        
+    </header>
+
+    <div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>After <a href="http://astro.berkeley.edu/~jbloom/">Josh Bloom</a>'s wonderful lecture on <a href="http://en.wikipedia.org/wiki/Random_forest">Random Forest</a> regression I was excited to out his <a href="https://github.com/AstroHackWeek/AstroHackWeek2014/tree/master/day4">example code</a> on my <em>Kepler</em> data. Josh explained regression with machine learning as taking many data points with a variety of features/atributes, and using relationships between these features to predict some other parameter. He explained that the Random Forest algorithm works by constructing many decision trees, which are used to construct the final prediction.</p>
+<p><strong>I wondered: could I use the Random Forest (RF) to do time series forecasting?</strong> Of course, as <a href="http://astrohackweek.github.io/blog/multi-output-random-forests.html">Jake noted</a>, RF only predicts single properties. As a result, RF isn't a good choice for doing trend forecasting over long time periods. (well, maybe) Instead, this would use RF to just predict the <em>next</em> datapoint.</p>
+<!-- TEASER_END -->
+
+<p>I only had a couple hours to play with the code, so the implementation was simple. I took a Quarter long chunk of long cadence light curve for the exoplanet host, Kepler 17. I smoothed the light curve, and down-sampled it to 0.2 day bins. Here is what the light curve looked like. You can see significant starspot modulations, which are nearly sinusoidal with a period of ~12 days, and evolving in amplitude.</p>
+<p><img alt="Plot of Input Time series" src="images/davenport_timeseries.png"></p>
+<p>I binned the light curve up in to 20 day windows. I moved each subsequent window by one datum. Each time window was considered one "data point", and all the flux values within the window were the "features". The flux value of the next data point after the window was the value to predict. Since the light curve was smoothly varying, the RF method did a very good job of predicting the next flux values! The experiment would be more interesting with more stochastic (read: profitable) data.</p>
+<p>One neat output of the RF regression is an analysis of which input features were important in the final decision tree used to predict! In this next figure I show this "Importance" metric as a function of feature. Since the features were evenly spaced flux values, we can show them sorted by their lag time behind the prediction value!</p>
+<p><img alt="Plot of the random-forest lag" src="images/davenport_lag.png"></p>
+<p>What you can see is the last two data points before the prediction (first two features here) carry most of the weight. This is because the curve in Figure 1 is slowly varying with time. However, there is also "importance power" shown at times centered around 12 days: the rotation period!</p>
+<p>Indeed, this looks somewhat like a <a href="http://en.wikipedia.org/wiki/Periodogram">periodogram</a>! It is showing the times which correlate most strongly with a given data point. This isn't exactly right... and I haven't wrapped my head around it fully. You might need to re-run the entire RF prediction for the n+1 data point, and the n+2, and the n+3.... to build the actual periodogram. But nevertheless we are showing time-spectral power without assuming any shape.</p>
+<p>This kind of analysis has a couple <strong>huge</strong> parameters that need tuning: How big should the window be? How down-sampled should the light curve be? </p>
+<p>Also a problem at present: This implementation requires uniform (continuous) sampling, and each "data point" (window) was required to have the same number of points. I think RF can handle missing data or features, but I haven't played with it enough to know the mechanics of doing so. Could it deal with irregularly sampled data, making the <strong>times and fluxes</strong> be the features, instead of just the fluxes? I don't know... yet. Maybe I'll find out at the next Hack Week!</p>
+<p>My sloppy, wandering code on the subject can be found <a href="https://github.com/jradavenport/random-forest-timeseries">here</a></p>
+</div>
+    </div>
+    <aside class="postpromonav">
+    <nav>
+            <ul itemprop="keywords" class="tags">
+           <li><a class="tag p-category" href="categories/random-forest.html" rel="tag">random forest</a></li>
+           <li><a class="tag p-category" href="categories/summary.html" rel="tag">summary</a></li>
+           <li><a class="tag p-category" href="categories/time-series.html" rel="tag">time series</a></li>
+        </ul>
+
+            <ul class="pager">
+            <li class="previous">
+                <a href="k2-photometry.html" rel="prev" title="K2 Photometry">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="ethnographic-notes.html" rel="next" title="Hacked Ethnographic Fieldnotes">Next post</a>
+            </li>
+        </ul>
+
+    </nav>
+    </aside>
+        <section class="comments">
+        <h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="astrohackweek",
+            disqus_url="http://astrohackweek.github.io/blog/time-series-rf.html",
+        disqus_title="Time Series Forecasting with Random Forest",
+        disqus_identifier="cache/posts/time-series-rf.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section>
+</article>
+               <script>var disqus_shortname="astrohackweek";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+
+
+        </div>
+        <!--End of body content-->
+
+        <footer>
+            Contents © 2015         <a href="mailto:jakevdp@cs.washington.edu">Jake VanderPlas</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+    </div>
+</div>
+
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/mathjax.js"></script>
+        <script src="assets/js/jquery.colorbox-min.js"></script>
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul>
+<li>
+<a class="addthis_button_facebook"></a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"></a>
+</li>
+<li>
+<a class="addthis_button_linkedin"></a>
+</li>
+<li>
+<a class="addthis_button_twitter"></a>
+</li>
+</ul>
+</div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script>jQuery("a.image-reference,!.islink").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+    <!-- fancy dates -->
+    <script>
+    moment.locale("");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script>
+    <!-- end fancy dates -->
+
+
+</body>
+</html>

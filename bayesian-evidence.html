@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Methods for calculating Bayesian evidence">
+    <meta name="viewport" content="width=device-width">
+    <title>Bayesian Evidence Calculation | Astro Hack Week</title>
+
+                <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+
+                <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+
+      <link rel="canonical" href="http://astrohackweek.github.io/blog/bayesian-evidence.html">
+
+
+
+    
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+
+    
+
+    
+    <meta name="author" content="Kyle Barbary">
+        <meta property="og:site_name" content="Astro Hack Week">
+    <meta property="og:title" content="Bayesian Evidence Calculation">
+    <meta property="og:url" content="http://astrohackweek.github.io/blog/bayesian-evidence.html">
+    <meta property="og:description" content="Methods for calculating Bayesian evidence">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2014-10-03T08:00:00-07:00">
+           <meta property="article:tag" content="bayesian evidence">
+           <meta property="article:tag" content="hacking">
+
+    
+    
+
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://astrohackweek.github.io">
+
+                <span id="blog-title">Astro Hack Week</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                                <li>
+<a href="index.html">Blog</a>
+                </li>
+<li>
+<a href="galleries/AstroHackWeek2014">Photos</a>
+                </li>
+<li>
+<a href="archive.html">Archive</a>
+                </li>
+<li>
+<a href="categories/index.html">Tags</a>
+                </li>
+<li>
+<a href="rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+
+            <ul class="nav navbar-nav navbar-right">
+    <li>
+    <a href="bayesian-evidence.md" id="sourcelink">Source</a>
+    </li>
+                
+            </ul>
+        </div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav>
+
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
+        <header>
+            <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Bayesian Evidence Calculation</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Kyle Barbary</span></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2014-10-03T08:00:00-07:00" itemprop="datePublished" title="2014-10-03 08:00">2014-10-03 08:00</time></a></p>
+                <p class="commentline">            <a href="bayesian-evidence.html#disqus_thread" data-disqus-identifier="cache/posts/bayesian-evidence.html">Comments</a>
+
+
+                    </p>
+<p class="sourceline"><a href="bayesian-evidence.md" id="sourcelink">Source</a></p>
+
+                <meta name="description" itemprop="description" content="Methods for calculating Bayesian evidence">
+        </div>
+        
+    </header>
+
+    <div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>In a Bayesian framework, object classification or model comparison can
+be done naturally by comparing the Bayesian <em>evidence</em> between two or
+more models, given the data. The evidence is the integral of the
+likelihood of the data over the entire prior volume for all the model
+parameters, weighted by the prior. (The ratio of evidence for two
+different models is known as the <a href="http://en.wikipedia.org/wiki/Bayes_factor">Bayes
+Factor</a>.) This
+multi-dimensional integral gets increasingly computationally intensive
+as the number of parameters increases. As a result, several clever
+algorithms have been developed to efficiently approximate the answer.</p>
+<p>In this hack, I looked at a couple specific implementations of such
+algorithms in Python.</p>
+<!-- TEASER_END -->
+
+<h2>Thermodynamic integration in Emcee</h2>
+<p>Parallel tempering is one way to calculate evidence. Dan F-M's
+excellent Python package <a href="http://dan.iel.fm/emcee/current/">Emcee</a>
+includes a <code>PTSampler</code> (PT = parallel tempering) that has a method
+<code>PTSampler.thermodynamic_integration_log_evidence()</code> for performing
+the evidence integral after the sampler is run. Phil Marshall ran the
+sampler on the test problem from the docs, wherein the likelihood
+function is simply a mixture of two 2-d gaussians and the prior is
+uniform. For this simple function, the evidence can be calculated
+analytically, so the result from <code>PTSampler</code> can be checked.</p>
+<p>As detailed in an <a href="http://github.com/dfm/emcee/pull/131">Emcee pull
+request</a> it turned out that the
+<code>PTSampler</code> result didn't match the analytic solution. This appears to
+be a bug in <code>PTSampler</code>! It's now handed off to one of the Emcee
+developers.</p>
+<h2>Nested sampling in Nestle</h2>
+<p><a href="http://en.wikipedia.org/wiki/Nested_sampling_algorithm">Nested
+sampling</a> is
+another algorithm for calculating evidence. There are a number of
+variants on the method. Without going into it in detail, the nested
+sampling algorithm employs a population of "active" points sampling
+the parameter space. The variants are chiefly concerned with
+efficiently choosing a new active point from the region of parameter
+space occupied by the current active point, <em>without</em> being biased by
+the existing points.</p>
+<p><a href="http://ccpforge.cse.rl.ac.uk/gf/project/multinest/">MultiNest</a> is a
+popular implementation of one variant, and there is even a <a href="http://johannesbuchner.github.io/PyMultiNest/index.html">Python
+wrapper</a> for
+it. While MultiNest is free for academic use, it doesn't have a truly
+open-source license, making widespread distribution and installation
+more complicated.</p>
+<h3>Single-ellipsoidal variant</h3>
+<div style="float:right">
+<img src="images/nested_sampling_single.png">
+</div>
+
+<p>I was motivated by the MultiNest licensing issue to make available my
+own simple pure-Python implementation of nested sampling in a package
+called <a href="https://github.com/kbarbary/nestle">Nestle</a> (rhymes with
+"wrestle"), tuning up the docs and implementing an automated
+test. Nestle currently implements a "single-ellipsoidal" variant of
+nested sampling, where a single ellipsoid is drawn around active
+points, and a new active point is picked uniformly from within the
+ellipse. This works well when the likelihood is unimodal: the single
+ellipse is a good approximation to the region occupied by the
+points. Unfortunately, the method suffers when the likelihood is
+multimodal. When this happens, the active points form multiple
+clusters in parameter space. Shown at left is what happens when you
+draw a single ellipsoid around such points. When you then chose a new
+point uniformly from within this ellipse, you're most likely to pick a
+point nowhere near the active points (and probably with lower
+likelihood than all the active points). You then have to keep picking
+new points from within the ellipse until you happen to get a good one.</p>
+<h3>Multi-ellipsoidal</h3>
+<div style="float:right">
+<img src="images/nested_sampling_multi.png">
+</div>
+
+<p>The solution implemented in MultiNest is to try to detect clusters of
+points and draw multiple ellipsoids around the clusters (see right
+figure).  Picking a point from within these <em>two</em> ellipses is much
+more likely to yield a point near the existing active points. However,
+finding clusters robustly is non-trivial.</p>
+<h2>Future</h2>
+<p>I plan to keep working on Nestle, for use in my own projects and to make
+it available to others. Here's a rough to-do list:</p>
+<ul>
+<li>Make the original "MCMC" sampling variant available as an option.</li>
+<li>Make the multi-ellipsoidal sampling available as an option, possibly
+  using the <a href="http://www.cs.cmu.edu/~dpelleg/kmeans.html">X-means</a>
+  clustering algorithm.</li>
+<li>Speed ups if necessary, using Cython.</li>
+<li>I'd like to have a Julia implementation as well.</li>
+</ul>
+</div>
+    </div>
+    <aside class="postpromonav">
+    <nav>
+            <ul itemprop="keywords" class="tags">
+           <li><a class="tag p-category" href="categories/bayesian-evidence.html" rel="tag">bayesian evidence</a></li>
+           <li><a class="tag p-category" href="categories/hacking.html" rel="tag">hacking</a></li>
+        </ul>
+
+            <ul class="pager">
+            <li class="previous">
+                <a href="ethnographic-notes.html" rel="prev" title="Hacked Ethnographic Fieldnotes">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="Hack-the-textbook-figures.html" rel="next" title="Hack the textbook figures">Next post</a>
+            </li>
+        </ul>
+
+    </nav>
+    </aside>
+        <section class="comments">
+        <h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="astrohackweek",
+            disqus_url="http://astrohackweek.github.io/blog/bayesian-evidence.html",
+        disqus_title="Bayesian Evidence Calculation",
+        disqus_identifier="cache/posts/bayesian-evidence.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section>
+</article>
+               <script>var disqus_shortname="astrohackweek";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+
+
+        </div>
+        <!--End of body content-->
+
+        <footer>
+            Contents © 2015         <a href="mailto:jakevdp@cs.washington.edu">Jake VanderPlas</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+    </div>
+</div>
+
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/mathjax.js"></script>
+        <script src="assets/js/jquery.colorbox-min.js"></script>
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul>
+<li>
+<a class="addthis_button_facebook"></a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"></a>
+</li>
+<li>
+<a class="addthis_button_linkedin"></a>
+</li>
+<li>
+<a class="addthis_button_twitter"></a>
+</li>
+</ul>
+</div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script>jQuery("a.image-reference,!.islink").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+    <!-- fancy dates -->
+    <script>
+    moment.locale("");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script>
+    <!-- end fancy dates -->
+
+
+</body>
+</html>
