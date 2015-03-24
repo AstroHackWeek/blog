@@ -1,7 +1,7 @@
-# AstroData Hack Week 2014 Website
+# AstroData Hack Week Blog
 
 This is the source of the website found at
-http://astrohackweek.github.io/2014. The source lives in the `master`
+http://astrohackweek.github.io/blog. The source lives in the `master`
 branch and the built site lives in the `gh-pages` branch.
 
 ## How to Contribute
