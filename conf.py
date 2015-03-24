@@ -21,12 +21,12 @@ BLOG_AUTHOR = "Jake VanderPlas"  # (translatable)
 BLOG_TITLE = "Astro Hack Week"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://astrohackweek.github.io/2014/"
+SITE_URL = "http://astrohackweek.github.io/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://astrohackweek.github.io/"
+BASE_URL = "http://astrohackweek.github.io/blog/"
 BLOG_EMAIL = "jakevdp@cs.washington.edu"
-BLOG_DESCRIPTION = "Materials from the 2014 Astro Hack Week"  # (translatable)
+BLOG_DESCRIPTION = "The Astro Hack Week Blog"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -110,11 +110,11 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 # Locale-dependent links for the sidebar
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/blog/index.html', 'Blog'),
+        ('/index.html', 'Blog'),
         ("/galleries/AstroHackWeek2014", "Photos"),
-        ("/blog/archive.html", "Archive"),
-        ("/blog/categories/index.html", "Tags"),
-        ("/blog/rss.xml", "RSS feed"),
+        ("/archive.html", "Archive"),
+        ("/categories/index.html", "Tags"),
+        ("/rss.xml", "RSS feed"),
     ),
 }
 
@@ -183,10 +183,10 @@ USE_BUNDLES = False
 #
 
 POSTS = (
-    ("posts/*.rst", "blog", "post.tmpl"),
-    ("posts/*.txt", "blog", "post.tmpl"),
-    ("posts/*.md", "blog", "post.tmpl"),
-    ("posts/*.ipynb", "blog", "post.tmpl"),
+    ("posts/*.rst", "", "post.tmpl"),
+    ("posts/*.txt", "", "post.tmpl"),
+    ("posts/*.md", "", "post.tmpl"),
+    ("posts/*.ipynb", "", "post.tmpl"),
 )
 PAGES = (
     ("stories/*.rst", "", "story.tmpl"),
@@ -253,7 +253,7 @@ COMPILERS = {
 # output / TRANSLATION[lang] / TAG_PATH / index.html (list of tags)
 # output / TRANSLATION[lang] / TAG_PATH / tag.html (list of posts for a tag)
 # output / TRANSLATION[lang] / TAG_PATH / tag.xml (RSS feed for a tag)
-TAG_PATH = "blog/categories"
+TAG_PATH = "categories"
 
 # If TAG_PAGES_ARE_INDEXES is set to True, each tag's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
@@ -261,7 +261,7 @@ TAG_PATH = "blog/categories"
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-INDEX_PATH = "blog"
+INDEX_PATH = ""
 
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
@@ -271,7 +271,7 @@ INDEX_PATH = "blog"
 # output / TRANSLATION[lang] / ARCHIVE_PATH / ARCHIVE_FILENAME
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / index.html
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / index.html
-ARCHIVE_PATH = "blog/"
+ARCHIVE_PATH = ""
 # ARCHIVE_FILENAME = "archive.html"
 
 # URLs to other posts/pages can take 3 forms:
@@ -282,7 +282,7 @@ ARCHIVE_PATH = "blog/"
 
 # Final location for the blog main RSS feed is:
 # output / TRANSLATION[lang] / RSS_PATH / rss.xml
-RSS_PATH = "blog"
+RSS_PATH = ""
 
 # Number of posts in RSS feeds
 # FEED_LENGTH = 10
