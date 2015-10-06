@@ -1,239 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://astrohackweek.github.io/blog/2014/index.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/Hack-the-textbook-figures.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/archive.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/astro-hack-week-wrapup.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/bayesian-evidence.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/2014/index.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/Hack-the-textbook-figures.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/archive.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/astro-hack-week-wrapup.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/bayesian-evidence.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/bayesian-evidence.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/blog-roll.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/ethnography.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/hacking.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/index.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/ipython-notebook.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/kepler.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/machine-learning.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/probabilistic-models.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/python.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/random-forest.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/random-forests.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/statistics.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/summary.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/time-series.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/twitter.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/categories/visualization.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/ethnographic-notes.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/hack-week-thoughts-blog-twitter.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/index.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/k2-photometry.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/multi-output-random-forests.html</loc>
-  <lastmod>2015-03-23</lastmod>
- </url>
- <url>
-  <loc>http://astrohackweek.github.io/blog/blog/time-series-rf.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/bayesian-evidence.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/blog-roll.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/ethnography.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/hacking.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/index.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/ipython-notebook.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/kepler.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/machine-learning.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/probabilistic-models.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/python.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/random-forest.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/random-forests.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/statistics.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/summary.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/time-series.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/twitter.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/categories/visualization.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/ethnographic-notes.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/galleries/AstroHackWeek2014/index.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/galleries/index.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/hack-week-thoughts-blog-twitter.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/index.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/k2-photometry.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/multi-output-random-forests.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://astrohackweek.github.io/blog/time-series-rf.html</loc>
-  <lastmod>2015-03-23</lastmod>
+  <lastmod>2015-10-06T04:03:00Z</lastmod>
  </url>
 </urlset>
